@@ -336,9 +336,9 @@
         },
         {
             "id": 48,
-            "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way out of the mountains.",
-            "locationId": 3,
-            "allyId": null
+            "line": "You decide it's probably best to follow someone with a general idea of where they are going.",
+            "locationId": null,
+            "allyId": 3
         },
         {
             "id": 49,
@@ -728,7 +728,7 @@
         },
         {
             "id": 60,
-            "currentStoryId": 31,
+            "currentStoryId": 48,
             "nextStoryId": 40,
             "decision": "Continue reading" 
         },
@@ -812,15 +812,15 @@
         },
         {
             "id": 74,
-            "currentStoryId": 47,
-            "nextStoryId": 40,
-            "decision": "Continue reading" 
+            "currentStoryId": 0,
+            "nextStoryId": 0,
+            "decision": "" 
         },
         {
             "id": 75,
-            "currentStoryId": 48,
-            "nextStoryId": 40,
-            "decision": "Continue reading" 
+            "currentStoryId": 0,
+            "nextStoryId": 0,
+            "decision": "" 
         },
         {
             "id": 76,
