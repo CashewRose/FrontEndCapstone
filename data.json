@@ -231,6 +231,132 @@
             "line": "'Oh yea, Pam made me some bread before I left. Lets split it!' She hands you half and begins to eat the other half. You eat together and feel your strength returning.",
             "locationId": null,
             "allyId": 1 
+        },
+        {
+            "id": 31,
+            "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way out of the forest.",
+            "locationId": 1,
+            "allyId": null
+        },
+        {
+            "id": 32,
+            "line": "I think it's this way!",
+            "locationId": null,
+            "allyId": 1
+        },
+        {
+            "id": 33,
+            "line": "You probably should have listened... She seem's a bit disappointed you didn't.",
+            "locationId": null,
+            "allyId": null
+        },
+        {
+            "id": 34,
+            "line": "We should head in this direction.",
+            "locationId": null,
+            "allyId": 2
+        },
+        {
+            "id": 35,
+            "line": "I believe we should make a turn here.",
+            "locationId": null,
+            "allyId": 1
+        }
+        ,        {
+            "id": 36,
+            "line": "I think we are almost there. Just straight through here!",
+            "locationId": null,
+            "allyId": 1
+        },
+        {
+            "id": 37,
+            "line": "After a bit more walking you manage to make out civilization in the distance! Maybe now you can figure out exactly where you are.",
+            "locationId": null,
+            "allyId": null
+        },
+        {
+            "id": 38,
+            "line": "We go this way",
+            "locationId": null,
+            "allyId": 2
+        },
+        {
+            "id": 39,
+            "line": "We just need to make a left through here.",
+            "locationId": null,
+            "allyId": 2
+        },
+        {
+            "id": 40,
+            "line": "You watch as the girl moves slowly down a path. At least shes waiting for you...",
+            "locationId": null,
+            "allyId": 3
+        },
+        {
+            "id": 41,
+            "line": "She turns around to see if you're still keeping up with her and changes her path slightly.",
+            "locationId": null,
+            "allyId": 3
+        }
+        ,        {
+            "id": 42,
+            "line": "She scoffs at you. Maybe you should just follow her...",
+            "locationId": null,
+            "allyId": 3
+        },
+        {
+            "id": 43,
+            "line": "The girl stops and turns to you. '...Mononoke'. You look at her for a second and then you understand shes offering you her name. She turns around and keeps walking.",
+            "locationId": null,
+            "allyId": 3
+        },
+        {
+            "id": 44,
+            "line": "You should probably thank your companion for all of her help and keeping you company. ",
+            "locationId": null,
+            "allyId": null
+        },
+        {
+            "id": 45,
+            "line": "Your new friend hands you some herbs and berries. “Here, eat these”. You take them from her. As you are eating them you feel better.",
+            "locationId": null,
+            "allyId": 3
+        },
+        {
+            "id": 46,
+            "line": "'These are Chiko nuts, they come from my village. They're really good for you but I'm afraid they don't taste so good.' You begin to eat the bitter nuts and after a few minutes feel your energy come back to you.",
+            "locationId": null,
+            "allyId": 2
+        },
+        {
+            "id": 47,
+            "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way out of the hills.",
+            "locationId": 2,
+            "allyId": null
+        },
+        {
+            "id": 48,
+            "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way out of the mountains.",
+            "locationId": 3,
+            "allyId": null
+        },
+        {
+            "id": 49,
+            "line": "",
+            "locationId": null,
+            "allyId": null
+        },
+        {
+            "id": 50,
+            "line": "",
+            "locationId": null,
+            "allyId": null
+        },
+        {
+            "id": 51,
+            "line": "",
+            "locationId": null,
+            "allyId": null
         }
         
     ],
@@ -482,12 +608,228 @@
         },
         {
             "id": 40,
+            "currentStoryId": 12,
+            "nextStoryId": 16,
+            "decision": "Approach them" 
+        },
+        {
+            "id": 41,
+            "currentStoryId": 12,
+            "nextStoryId": 11,
+            "decision": "Don't approach" 
+        },
+        {
+            "id": 42,
+            "currentStoryId": 22,
+            "nextStoryId": 31,
+            "decision": "Go with Kiki" 
+        },
+        {
+            "id": 43,
+            "currentStoryId": 22,
+            "nextStoryId": 24,
+            "decision": "Dont go with Kiki" 
+        },
+        {
+            "id": 44,
+            "currentStoryId": 31,
+            "nextStoryId": 32,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 45,
+            "currentStoryId": 32,
+            "nextStoryId": 35,
+            "decision": "Listen to her" 
+        },
+        {
+            "id": 46,
+            "currentStoryId": 32,
+            "nextStoryId": 33,
+            "decision": "Go a different way" 
+        },
+        {
+            "id": 47,
+            "currentStoryId": 31,
+            "nextStoryId": 34,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 48,
+            "currentStoryId": 34,
+            "nextStoryId": 38,
+            "decision": "Follow her directions" 
+        },
+        {
+            "id": 49,
+            "currentStoryId": 34,
+            "nextStoryId": 33,
+            "decision": "Go a different route" 
+        },
+        {
+            "id": 50,
+            "currentStoryId": 33,
+            "nextStoryId": 34,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 51,
+            "currentStoryId": 33,
+            "nextStoryId": 32,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 52,
+            "currentStoryId": 35,
+            "nextStoryId": 36,
+            "decision": "Listen to her" 
+        },
+        {
+            "id": 53,
+            "currentStoryId": 35,
+            "nextStoryId": 33,
+            "decision": "Go a different way" 
+        },
+        {
+            "id": 54,
+            "currentStoryId": 36,
+            "nextStoryId": 37,
+            "decision": "Listen to her" 
+        },
+        {
+            "id": 55,
+            "currentStoryId": 36,
+            "nextStoryId": 33,
+            "decision": "Go a different way" 
+        },
+        {
+            "id": 56,
+            "currentStoryId": 38,
+            "nextStoryId": 39,
+            "decision": "Follow her directions" 
+        },
+        {
+            "id": 57,
+            "currentStoryId": 38,
+            "nextStoryId": 33,
+            "decision": "Go a different route" 
+        },
+        {
+            "id": 58,
+            "currentStoryId": 39,
+            "nextStoryId": 33,
+            "decision": "Go a different route" 
+        },
+        {
+            "id": 59,
+            "currentStoryId": 39,
+            "nextStoryId": 37,
+            "decision": "Follow her directions" 
+        },
+        {
+            "id": 60,
+            "currentStoryId": 31,
+            "nextStoryId": 40,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 61,
+            "currentStoryId": 40,
+            "nextStoryId": 41,
+            "decision": "Follow her" 
+        },
+        {
+            "id": 62,
+            "currentStoryId": 40,
+            "nextStoryId": 42,
+            "decision": "Try going your own way" 
+        },
+        {
+            "id": 63,
+            "currentStoryId": 42,
+            "nextStoryId": 40,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 64,
+            "currentStoryId": 41,
+            "nextStoryId": 43,
+            "decision": "Follow her" 
+        },
+        {
+            "id": 65,
+            "currentStoryId": 41,
+            "nextStoryId": 42,
+            "decision": "Try going your own way" 
+        },
+        {
+            "id": 66,
+            "currentStoryId": 43,
+            "nextStoryId": 42,
+            "decision": "Try going your own way" 
+        },
+        {
+            "id": 67,
+            "currentStoryId": 43,
+            "nextStoryId": 37,
+            "decision": "Follow her" 
+        },
+        {
+            "id": 68,
+            "currentStoryId": 44,
+            "nextStoryId": 37,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 69,
+            "currentStoryId": 37,
+            "nextStoryId": 44,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 70,
+            "currentStoryId": 44,
+            "nextStoryId": 45,
+            "decision": "Thank her" 
+        },
+        {
+            "id": 71,
+            "currentStoryId": 44,
+            "nextStoryId": 30,
+            "decision": "Thank her" 
+        },
+        {
+            "id": 72,
+            "currentStoryId": 44,
+            "nextStoryId": 46,
+            "decision": "Thank her" 
+        },
+        {
+            "id": 73,
+            "currentStoryId": 48,
+            "nextStoryId": 34,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 74,
+            "currentStoryId": 47,
+            "nextStoryId": 40,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 75,
+            "currentStoryId": 48,
+            "nextStoryId": 40,
+            "decision": "Continue reading" 
+        },
+        {
+            "id": 76,
             "currentStoryId": 0,
             "nextStoryId": 0,
             "decision": "" 
         },
         {
-            "id": 41,
+            "id": 77,
             "currentStoryId": 0,
             "nextStoryId": 0,
             "decision": "" 
