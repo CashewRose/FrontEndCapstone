@@ -4,11 +4,17 @@
 
 ## Where I am in the process
 1. Currently the project has just begun and the database is still in the process of being completed with story data.
-1. All tickets issues are in the project including some stetch goals. None have been started or completed.
+1. All ticket issues are in the project including some stetch goals.
+1. Currently the user can input their player's name and the system generates their random stats and game location.
+1. The player is then directed to another page where they can choose their partner character.
+1. Once selected the player moves to the welcome or story screen.
+1. All this information is sent to the json server.
+1. The player's json information is all collected, saved, and filled out accordingly for mvp.
 
 ## Dependancies
 This project is currently using:
-1. React.js
+1. React
+1. React Router
 
 To download a copy of this code for your own personal computer and get it running correctly please follow along with these detailed steps in your terminal:
  

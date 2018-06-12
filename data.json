@@ -1,7 +1,7 @@
 {
   "players": [
     {
-      "id": "",
+      "id": 1,
       "firstName": "",
       "lastName": "",
       "maxHealth": "",
@@ -33,7 +33,7 @@
   "allies": [
     {
       "id": 1,
-      "name": "KiKi",
+      "name": "Kiki",
       "maxHealth": 25,
       "currentHealth": "",
       "attack": 2
