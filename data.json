@@ -41,9 +41,42 @@
       "attack": 1,
       "currentHealth": 10,
       "allyActive": false,
-      "locationID": 3,
+      "locationID": 1,
       "id": 4,
-      "allyID": 3
+      "allyID": 1
+    },
+    {
+      "firstName": "Rach",
+      "lastName": "Babcock",
+      "maxHealth": 13,
+      "attack": 1,
+      "currentHealth": 13,
+      "allyActive": false,
+      "locationID": 2,
+      "id": 5,
+      "allyID": 1
+    },
+    {
+      "firstName": "pop",
+      "lastName": "",
+      "maxHealth": 18,
+      "attack": 0,
+      "currentHealth": 18,
+      "allyActive": false,
+      "locationID": 2,
+      "id": 6,
+      "allyID": 1
+    },
+    {
+      "firstName": "Levi",
+      "lastName": "Badass",
+      "maxHealth": 16,
+      "attack": 1,
+      "currentHealth": 16,
+      "allyActive": false,
+      "locationID": 3,
+      "id": 7,
+      "allyID": 1
     }
   ],
   "locations": [
@@ -157,7 +190,7 @@
     },
     {
       "id": 18,
-      "line": "Hi I’m ((characterName)), do you know where we are? And how to get out of here?"
+      "line": "Hi I’m characterName, do you know where we are? And how to get out of here?"
     },
     {
       "id": 19,
@@ -645,7 +678,7 @@
       "nextStoryId": 11,
       "decision": "Don't approach",
       "locationId": null,
-      "allyId": null
+      "allyId": 1
     },
     {
       "id": 42,
@@ -653,7 +686,7 @@
       "nextStoryId": 31,
       "decision": "Go with Kiki",
       "locationId": 1,
-      "allyId": null
+      "allyId": 1
     },
     {
       "id": 43,
@@ -685,7 +718,7 @@
       "nextStoryId": 33,
       "decision": "Go a different way",
       "locationId": null,
-      "allyId": null
+      "allyId": 1
     },
     {
       "id": 47,
@@ -709,7 +742,7 @@
       "nextStoryId": 33,
       "decision": "Go a different route",
       "locationId": null,
-      "allyId": null
+      "allyId": 2
     },
     {
       "id": 50,
@@ -741,7 +774,7 @@
       "nextStoryId": 33,
       "decision": "Go a different way",
       "locationId": null,
-      "allyId": null
+      "allyId": 1
     },
     {
       "id": 54,
@@ -749,7 +782,7 @@
       "nextStoryId": 37,
       "decision": "Listen to her",
       "locationId": null,
-      "allyId": null
+      "allyId": 1
     },
     {
       "id": 55,
@@ -757,7 +790,7 @@
       "nextStoryId": 33,
       "decision": "Go a different way",
       "locationId": null,
-      "allyId": null
+      "allyId": 1
     },
     {
       "id": 56,
@@ -773,7 +806,7 @@
       "nextStoryId": 33,
       "decision": "Go a different route",
       "locationId": null,
-      "allyId": null
+      "allyId": 2
     },
     {
       "id": 58,
@@ -781,7 +814,7 @@
       "nextStoryId": 33,
       "decision": "Go a different route",
       "locationId": null,
-      "allyId": null
+      "allyId": 2
     },
     {
       "id": 59,
@@ -789,7 +822,7 @@
       "nextStoryId": 37,
       "decision": "Follow her directions",
       "locationId": null,
-      "allyId": null
+      "allyId": 2
     },
     {
       "id": 60,
@@ -853,7 +886,7 @@
       "nextStoryId": 37,
       "decision": "Follow her",
       "locationId": null,
-      "allyId": null
+      "allyId": 3
     },
     {
       "id": 68,
