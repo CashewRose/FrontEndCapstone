@@ -11,6 +11,39 @@
       "allyID": "",
       "userID": "",
       "locationID": ""
+    },
+    {
+      "firstName": "Cashew",
+      "lastName": "Rose",
+      "maxHealth": 18,
+      "attack": 1,
+      "currentHealth": 18,
+      "allyActive": false,
+      "locationID": 2,
+      "id": 2,
+      "allyID": 2
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Austin",
+      "maxHealth": 14,
+      "attack": 0,
+      "currentHealth": 14,
+      "allyActive": false,
+      "locationID": 3,
+      "id": 3,
+      "allyID": 2
+    },
+    {
+      "firstName": "Dejan",
+      "lastName": "Guy",
+      "maxHealth": 10,
+      "attack": 1,
+      "currentHealth": 10,
+      "allyActive": false,
+      "locationID": 3,
+      "id": 4,
+      "allyID": 3
     }
   ],
   "locations": [
@@ -35,310 +68,218 @@
       "id": 1,
       "name": "Kiki",
       "maxHealth": 25,
-      "currentHealth": "",
+      "currentHealth": 25,
       "attack": 2
     },
     {
       "id": 2,
       "name": "Nausicaa",
       "maxHealth": 20,
-      "currentHealth": "",
+      "currentHealth": 20,
       "attack": 3
     },
     {
       "id": 3,
       "name": "Mononoke",
       "maxHealth": 15,
-      "currentHealth": "",
+      "currentHealth": 15,
       "attack": 4
     }
   ],
   "story": [
     {
       "id": 1,
-      "line": "Ouch...",
-      "locationId": null,
-      "allyId": null
+      "line": "Ouch..."
     },
     {
       "id": 2,
-      "line": "You choose to stand up ignoring your injury. Unfortunately moving so quickly caused you to fall down and injure yourself.",
-      "locationId": null,
-      "allyId": null
+      "line": "You choose to stand up ignoring your injury. Unfortunately moving so quickly caused you to fall down and injure yourself."
     },
     {
       "id": 3,
-      "line": "You choose to inspect your injury. Luckily it doesnt seem to be too bad.",
-      "locationId": null,
-      "allyId": null
+      "line": "You choose to inspect your injury. Luckily it doesnt seem to be too bad."
     },
     {
       "id": 4,
-      "line": "You look around, you seem to be in a forest. Its probably best to find someone or a way out of here.",
-      "locationId": 1,
-      "allyId": null
+      "line": "You look around, you seem to be in a forest. Its probably best to find someone or a way out of here."
     },
     {
       "id": 5,
-      "line": "You look around, you seem to be in the hills. Its probably best to find someone or a way out of here.",
-      "locationId": 2,
-      "allyId": null
+      "line": "You look around, you seem to be in the hills. Its probably best to find someone or a way out of here."
     },
     {
       "id": 6,
-      "line": "You look around, you seem to be in some mountains. Its probably best to find someone or a way out of here.",
-      "locationId": 3,
-      "allyId": null
+      "line": "You look around, you seem to be in some mountains. Its probably best to find someone or a way out of here."
     },
     {
       "id": 7,
-      "line": "You see someone off in the distance...",
-      "locationId": 1,
-      "allyId": null
+      "line": "You see someone off in the distance..."
     },
     {
       "id": 8,
-      "line": "You see someone flying above you on a broom!",
-      "locationId": 3,
-      "allyId": 1
+      "line": "You see someone flying above you on a broom!"
     },
     {
       "id": 9,
-      "line": "You see someone flying above you on a broom!",
-      "locationId": 2,
-      "allyId": 1
+      "line": "You see someone flying above you on a broom!"
     },
     {
       "id": 10,
-      "line": "You managed to get them to notice you after waving your arms around like a fool. They slowly begin to descend and land a few feet away from you.",
-      "locationId": null,
-      "allyId": null
+      "line": "You managed to get them to notice you after waving your arms around like a fool. They slowly begin to descend and land a few feet away from you."
     },
     {
       "id": 11,
-      "line": "You decide to continue on by yourself.",
-      "locationId": null,
-      "allyId": null
+      "line": "You decide to continue on by yourself."
     },
     {
       "id": 12,
-      "line": "After a bit of walking, you manage to see someone off in the distance.",
-      "locationId": null,
-      "allyId": null
+      "line": "After a bit of walking, you manage to see someone off in the distance."
     },
     {
       "id": 13,
-      "line": "Unfortunately after some walking you hit a dead end. Its best to go back the other way.",
-      "locationId": null,
-      "allyId": null
+      "line": "Unfortunately after some walking you hit a dead end. Its best to go back the other way."
     },
     {
       "id": 14,
-      "line": "You manage to make your way back to where you started.",
-      "locationId": 3,
-      "allyId": null
+      "line": "You manage to make your way back to where you started."
     },
     {
       "id": 15,
-      "line": "You manage to make your way back to where you started.",
-      "locationId": 1,
-      "allyId": null
+      "line": "You manage to make your way back to where you started."
     },
     {
       "id": 16,
-      "line": "It seems to be girl in a plain purple dress. She has short cropped black hair with a big red ribbon ontop of her head. She seems strangely off, almost 2D and cartoony. You can’t seem to put your finger on it…",
-      "locationId": null,
-      "allyId": 1
+      "line": "It seems to be girl in a plain purple dress. She has short cropped black hair with a big red ribbon ontop of her head. She seems strangely off, almost 2D and cartoony. You can’t seem to put your finger on it…"
     },
     {
       "id": 17,
-      "line": "You made it this far so you despite your confusion you begin to talk to them.",
-      "locationId": null,
-      "allyId": null
+      "line": "You made it this far so you despite your confusion you begin to talk to them."
     },
     {
       "id": 18,
-      "line": "Hi I’m ((characterName)), do you know where we are? And how to get out of here?",
-      "locationId": null,
-      "allyId": null
+      "line": "Hi I’m ((characterName)), do you know where we are? And how to get out of here?"
     },
     {
       "id": 19,
-      "line": "She smiles warmly at you. 'I’m Kiki. Its nice to meet you. I can fly us to the nearest town. Its a little scary but we can go on my broom. You’ll just have to make room for JiJi.'",
-      "locationId": 2,
-      "allyId": 1
+      "line": "She smiles warmly at you. 'I’m Kiki. Its nice to meet you. I can fly us to the nearest town. Its a little scary but we can go on my broom. You’ll just have to make room for JiJi.'"
     },
     {
       "id": 20,
-      "line": "She smiles warmly at you. 'I’m Kiki. Its nice to meet you. I can fly us to the nearest town. Its a little scary but we can go on my broom. You’ll just have to make room for JiJi.'",
-      "locationId": 3,
-      "allyId": 1
+      "line": "She smiles warmly at you. 'I’m Kiki. Its nice to meet you. I can fly us to the nearest town. Its a little scary but we can go on my broom. You’ll just have to make room for JiJi.'"
     },
     {
       "id": 21,
-      "line": "She smiles warmly at you. 'My name’s Kiki and this is Jiji.' She points towards the black cat that is at her feet.",
-      "locationId": 1,
-      "allyId": 1
+      "line": "She smiles warmly at you. 'My name’s Kiki and this is Jiji.' She points towards the black cat that is at her feet."
     },
     {
       "id": 22,
-      "line": "The cat meows at you nonchalantly. 'Normally I would just get us out of here but my broom broke as I fell… I had a delivery but some stupid crows started attacking me. But I should be able to get us out on foot.'",
-      "locationId": 1,
-      "allyId": 1
+      "line": "The cat meows at you nonchalantly. 'Normally I would just get us out of here but my broom broke as I fell… I had a delivery but some stupid crows started attacking me. But I should be able to get us out on foot.'"
     },
     {
       "id": 23,
-      "line": "A black cat jumps onto her shoulders and meows at you in greeting.",
-      "locationId": null,
-      "allyId": 1
+      "line": "A black cat jumps onto her shoulders and meows at you in greeting."
     },
     {
       "id": 24,
-      "line": "You choose to politely decline her offer and proceed on foot.",
-      "locationId": null,
-      "allyId": 1
+      "line": "You choose to politely decline her offer and proceed on foot."
     },
     {
       "id": 25,
-      "line": "You shakily climb onto the broom behind her and grip it tightly. She offers you an assured nod and says excitedly, 'Ok! Hold on tight! Here we go!'",
-      "locationId": null,
-      "allyId": 1
+      "line": "You shakily climb onto the broom behind her and grip it tightly. She offers you an assured nod and says excitedly, 'Ok! Hold on tight! Here we go!'"
     },
     {
       "id": 26,
-      "line": "After lifting off the ground you begin to instantly regret your decision. Especially when you looked down but after a while of having your eyes closed you feel confident enough to open them without freaking out.",
-      "locationId": null,
-      "allyId": 1
+      "line": "After lifting off the ground you begin to instantly regret your decision. Especially when you looked down but after a while of having your eyes closed you feel confident enough to open them without freaking out."
     },
     {
       "id": 27,
-      "line": "You see a town approaching. You must have kept your eyes closed for a while. Nothing seems familiar but that could also be because you've never seen something from this height before.",
-      "locationId": null,
-      "allyId": 1
+      "line": "You see a town approaching. You must have kept your eyes closed for a while. Nothing seems familiar but that could also be because you've never seen something from this height before."
     },
     {
       "id": 28,
-      "line": "Kiki begins to talk to you 'You ok back there? Dont worry we are almost there.' You feel your stomach start to flip as she starts lowering the broom to the ground.",
-      "locationId": null,
-      "allyId": 1
+      "line": "Kiki begins to talk to you 'You ok back there? Dont worry we are almost there.' You feel your stomach start to flip as she starts lowering the broom to the ground."
     },
     {
       "id": 29,
-      "line": "Now that you're back on the ground you feel a lot better. You see yourself right outside the town, it wont be a long walk to reach civilization. You turn to Kiki and thank her for helping you out.",
-      "locationId": null,
-      "allyId": 1
+      "line": "Now that you're back on the ground you feel a lot better. You see yourself right outside the town, it wont be a long walk to reach civilization. You turn to Kiki and thank her for helping you out."
     },
     {
       "id": 30,
-      "line": "'Oh yea, Pam made me some bread before I left. Lets split it!' She hands you half and begins to eat the other half. You eat together and feel your strength returning.",
-      "locationId": null,
-      "allyId": 1
+      "line": "'Oh yea, Pam made me some bread before I left. Lets split it!' She hands you half and begins to eat the other half. You eat together and feel your strength returning."
     },
     {
       "id": 31,
-      "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way out of the forest.",
-      "locationId": 1,
-      "allyId": null
+      "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way out of the forest."
     },
     {
       "id": 32,
-      "line": "I think it's this way!",
-      "locationId": null,
-      "allyId": 1
+      "line": "I think it's this way!"
     },
     {
       "id": 33,
-      "line": "You probably should have listened... She seem's a bit disappointed you didn't.",
-      "locationId": null,
-      "allyId": null
+      "line": "You probably should have listened... She seem's a bit disappointed you didn't."
     },
     {
       "id": 34,
-      "line": "We should head in this direction.",
-      "locationId": null,
-      "allyId": 2
+      "line": "We should head in this direction."
     },
     {
       "id": 35,
-      "line": "I believe we should make a turn here.",
-      "locationId": null,
-      "allyId": 1
+      "line": "I believe we should make a turn here."
     },
     {
       "id": 36,
-      "line": "I think we are almost there. Just straight through here!",
-      "locationId": null,
-      "allyId": 1
+      "line": "I think we are almost there. Just straight through here!"
     },
     {
       "id": 37,
-      "line": "After a bit more walking you manage to make out civilization in the distance! Maybe now you can figure out exactly where you are.",
-      "locationId": null,
-      "allyId": null
+      "line": "After a bit more walking you manage to make out civilization in the distance! Maybe now you can figure out exactly where you are."
     },
     {
       "id": 38,
-      "line": "We go this way",
-      "locationId": null,
-      "allyId": 2
+      "line": "We go this way"
     },
     {
       "id": 39,
-      "line": "We just need to make a left through here.",
-      "locationId": null,
-      "allyId": 2
+      "line": "We just need to make a left through here."
     },
     {
       "id": 40,
-      "line": "You watch as the girl moves slowly down a path. At least shes waiting for you...",
-      "locationId": null,
-      "allyId": 3
+      "line": "You watch as the girl moves slowly down a path. At least shes waiting for you..."
     },
     {
       "id": 41,
-      "line": "She turns around to see if you're still keeping up with her and changes her path slightly.",
-      "locationId": null,
-      "allyId": 3
+      "line": "She turns around to see if you're still keeping up with her and changes her path slightly."
     },
     {
       "id": 42,
-      "line": "She scoffs at you. Maybe you should just follow her...",
-      "locationId": null,
-      "allyId": 3
+      "line": "She scoffs at you. Maybe you should just follow her..."
     },
     {
       "id": 43,
-      "line": "The girl stops and turns to you. '...Mononoke'. You look at her for a second and then you understand shes offering you her name. She turns around and keeps walking.",
-      "locationId": null,
-      "allyId": 3
+      "line": "The girl stops and turns to you. '...Mononoke'. You look at her for a second and then you understand shes offering you her name. She turns around and keeps walking."
     },
     {
       "id": 44,
-      "line": "You should probably thank your companion for all of her help and keeping you company. ",
-      "locationId": null,
-      "allyId": null
+      "line": "You should probably thank your companion for all of her help and keeping you company. "
     },
     {
       "id": 45,
-      "line": "Your new friend hands you some herbs and berries. “Here, eat these”. You take them from her. As you are eating them you feel better.",
-      "locationId": null,
-      "allyId": 3
+      "line": "Your new friend hands you some herbs and berries. “Here, eat these”. You take them from her. As you are eating them you feel better."
     },
     {
       "id": 46,
-      "line": "'These are Chiko nuts, they come from my village. They're really good for you but I'm afraid they don't taste so good.' You begin to eat the bitter nuts and after a few minutes feel your energy come back to you.",
-      "locationId": null,
-      "allyId": 2
+      "line": "'These are Chiko nuts, they come from my village. They're really good for you but I'm afraid they don't taste so good.' You begin to eat the bitter nuts and after a few minutes feel your energy come back to you."
     },
     {
       "id": 47,
-      "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way out of the hills.",
-      "locationId": 2,
+      "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way through the mountains.",
+      "locationId": 3,
       "allyId": null
     },
     {
       "id": 48,
-      "line": "You decide it's probably best to follow someone with a general idea of where they are going.",
+      "line": "You decide it's probably best to follow someone with a general idea of where they are going. You begin trailing behind her.",
       "locationId": null,
       "allyId": 3
     },
@@ -366,451 +307,601 @@
       "id": 1,
       "currentStoryId": 1,
       "nextStoryId": 3,
-      "decision": "Touch the bump on your head"
+      "decision": "Touch the bump on your head",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 2,
       "currentStoryId": 1,
       "nextStoryId": 2,
-      "decision": "Don't inspect your injury"
+      "decision": "Don't inspect your injury",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 3,
       "currentStoryId": 2,
       "nextStoryId": 4,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 1,
+      "allyId": null
     },
     {
       "id": 4,
       "currentStoryId": 2,
       "nextStoryId": 5,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 2,
+      "allyId": null
     },
     {
       "id": 5,
       "currentStoryId": 2,
       "nextStoryId": 6,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 3,
+      "allyId": null
     },
     {
       "id": 6,
       "currentStoryId": 3,
       "nextStoryId": 4,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 1,
+      "allyId": null
     },
     {
       "id": 7,
       "currentStoryId": 3,
       "nextStoryId": 5,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 2,
+      "allyId": null
     },
     {
       "id": 8,
       "currentStoryId": 3,
       "nextStoryId": 6,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 3,
+      "allyId": null
     },
     {
       "id": 9,
       "currentStoryId": 5,
       "nextStoryId": 7,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 1,
+      "allyId": null
     },
     {
       "id": 10,
       "currentStoryId": 4,
       "nextStoryId": 12,
-      "decision": "Head left"
+      "decision": "Head left",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 11,
       "currentStoryId": 6,
       "nextStoryId": 12,
-      "decision": "Head right"
+      "decision": "Head right",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 12,
       "currentStoryId": 5,
       "nextStoryId": 9,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 2,
+      "allyId": 1
     },
     {
       "id": 13,
       "currentStoryId": 8,
       "nextStoryId": 10,
-      "decision": "Try and get their attention"
+      "decision": "Try and get their attention",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 14,
       "currentStoryId": 9,
       "nextStoryId": 10,
-      "decision": "Try and get their attention"
+      "decision": "Try and get their attention",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 15,
       "currentStoryId": 8,
       "nextStoryId": 11,
-      "decision": "Keep walking"
+      "decision": "Keep walking",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 16,
       "currentStoryId": 9,
       "nextStoryId": 11,
-      "decision": "Keep walking"
+      "decision": "Keep walking",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 17,
       "currentStoryId": 4,
       "nextStoryId": 13,
-      "decision": "Head right"
+      "decision": "Head right",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 18,
       "currentStoryId": 6,
       "nextStoryId": 13,
-      "decision": "Head left"
+      "decision": "Head left",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 18,
-      "currentStoryId": 13,
-      "nextStoryId": 14,
-      "decision": "Continue reading"
+      "currentStoryId": 6,
+      "nextStoryId": 8,
+      "decision": "Continue reading",
+      "locationId": 3,
+      "allyId": 1
     },
     {
       "id": 18,
       "currentStoryId": 13,
       "nextStoryId": 15,
-      "decision": "Head back"
+      "decision": "Head back",
+      "locationId": 1,
+      "allyId": null
     },
     {
       "id": 19,
       "currentStoryId": 15,
       "nextStoryId": 12,
-      "decision": "Head left"
+      "decision": "Head left",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 20,
       "currentStoryId": 15,
       "nextStoryId": 13,
-      "decision": "Head right"
+      "decision": "Head right",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 21,
       "currentStoryId": 13,
       "nextStoryId": 14,
-      "decision": "Head back"
+      "decision": "Head back",
+      "locationId": 3,
+      "allyId": null
     },
     {
       "id": 22,
       "currentStoryId": 14,
       "nextStoryId": 12,
-      "decision": "Head right"
+      "decision": "Head right",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 23,
-      "currentStoryId": 15,
+      "currentStoryId": 14,
       "nextStoryId": 13,
-      "decision": "Head left"
+      "decision": "Head left",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 24,
       "currentStoryId": 10,
       "nextStoryId": 16,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 25,
       "currentStoryId": 16,
       "nextStoryId": 17,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 26,
       "currentStoryId": 17,
       "nextStoryId": 18,
-      "decision": "Introduce yourself"
+      "decision": "Introduce yourself",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 27,
       "currentStoryId": 18,
       "nextStoryId": 19,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 2,
+      "allyId": 1
     },
     {
       "id": 28,
       "currentStoryId": 18,
       "nextStoryId": 20,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 3,
+      "allyId": 1
     },
     {
       "id": 29,
       "currentStoryId": 18,
       "nextStoryId": 21,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 1,
+      "allyId": 1
     },
     {
       "id": 30,
       "currentStoryId": 21,
       "nextStoryId": 22,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": 1,
+      "allyId": 1
     },
     {
       "id": 31,
       "currentStoryId": 19,
       "nextStoryId": 23,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 32,
       "currentStoryId": 20,
       "nextStoryId": 23,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 33,
       "currentStoryId": 23,
       "nextStoryId": 25,
-      "decision": "Fly with her"
+      "decision": "Fly with her",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 34,
       "currentStoryId": 23,
       "nextStoryId": 24,
-      "decision": "Dont fly with her"
+      "decision": "Dont fly with her",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 35,
       "currentStoryId": 25,
       "nextStoryId": 26,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 36,
       "currentStoryId": 26,
       "nextStoryId": 27,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 37,
       "currentStoryId": 27,
       "nextStoryId": 28,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 38,
       "currentStoryId": 28,
       "nextStoryId": 29,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 39,
       "currentStoryId": 29,
       "nextStoryId": 30,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 40,
       "currentStoryId": 12,
       "nextStoryId": 16,
-      "decision": "Approach them"
+      "decision": "Approach them",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 41,
       "currentStoryId": 12,
       "nextStoryId": 11,
-      "decision": "Don't approach"
+      "decision": "Don't approach",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 42,
       "currentStoryId": 22,
       "nextStoryId": 31,
-      "decision": "Go with Kiki"
+      "decision": "Go with Kiki",
+      "locationId": 1,
+      "allyId": null
     },
     {
       "id": 43,
       "currentStoryId": 22,
       "nextStoryId": 24,
-      "decision": "Dont go with Kiki"
+      "decision": "Dont go with Kiki",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 44,
       "currentStoryId": 31,
       "nextStoryId": 32,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 45,
       "currentStoryId": 32,
       "nextStoryId": 35,
-      "decision": "Listen to her"
+      "decision": "Listen to her",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 46,
       "currentStoryId": 32,
       "nextStoryId": 33,
-      "decision": "Go a different way"
+      "decision": "Go a different way",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 47,
       "currentStoryId": 31,
       "nextStoryId": 34,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 2
     },
     {
       "id": 48,
       "currentStoryId": 34,
       "nextStoryId": 38,
-      "decision": "Follow her directions"
+      "decision": "Follow her directions",
+      "locationId": null,
+      "allyId": 2
     },
     {
       "id": 49,
       "currentStoryId": 34,
       "nextStoryId": 33,
-      "decision": "Go a different route"
+      "decision": "Go a different route",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 50,
       "currentStoryId": 33,
       "nextStoryId": 34,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 2
     },
     {
       "id": 51,
       "currentStoryId": 33,
       "nextStoryId": 32,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 52,
       "currentStoryId": 35,
       "nextStoryId": 36,
-      "decision": "Listen to her"
+      "decision": "Listen to her",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 53,
       "currentStoryId": 35,
       "nextStoryId": 33,
-      "decision": "Go a different way"
+      "decision": "Go a different way",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 54,
       "currentStoryId": 36,
       "nextStoryId": 37,
-      "decision": "Listen to her"
+      "decision": "Listen to her",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 55,
       "currentStoryId": 36,
       "nextStoryId": 33,
-      "decision": "Go a different way"
+      "decision": "Go a different way",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 56,
       "currentStoryId": 38,
       "nextStoryId": 39,
-      "decision": "Follow her directions"
+      "decision": "Follow her directions",
+      "locationId": null,
+      "allyId": 2
     },
     {
       "id": 57,
       "currentStoryId": 38,
       "nextStoryId": 33,
-      "decision": "Go a different route"
+      "decision": "Go a different route",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 58,
       "currentStoryId": 39,
       "nextStoryId": 33,
-      "decision": "Go a different route"
+      "decision": "Go a different route",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 59,
       "currentStoryId": 39,
       "nextStoryId": 37,
-      "decision": "Follow her directions"
+      "decision": "Follow her directions",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 60,
       "currentStoryId": 48,
       "nextStoryId": 40,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 61,
       "currentStoryId": 40,
       "nextStoryId": 41,
-      "decision": "Follow her"
+      "decision": "Follow her",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 62,
       "currentStoryId": 40,
       "nextStoryId": 42,
-      "decision": "Try going your own way"
+      "decision": "Try going your own way",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 63,
       "currentStoryId": 42,
       "nextStoryId": 40,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 64,
       "currentStoryId": 41,
       "nextStoryId": 43,
-      "decision": "Follow her"
+      "decision": "Follow her",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 65,
       "currentStoryId": 41,
       "nextStoryId": 42,
-      "decision": "Try going your own way"
+      "decision": "Try going your own way",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 66,
       "currentStoryId": 43,
       "nextStoryId": 42,
-      "decision": "Try going your own way"
+      "decision": "Try going your own way",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 67,
       "currentStoryId": 43,
       "nextStoryId": 37,
-      "decision": "Follow her"
+      "decision": "Follow her",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 68,
       "currentStoryId": 44,
       "nextStoryId": 37,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 69,
       "currentStoryId": 37,
       "nextStoryId": 44,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 70,
       "currentStoryId": 44,
       "nextStoryId": 45,
-      "decision": "Thank her"
+      "decision": "Thank her",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 71,
       "currentStoryId": 44,
       "nextStoryId": 30,
-      "decision": "Thank her"
+      "decision": "Thank her",
+      "locationId": null,
+      "allyId": 1
     },
     {
       "id": 72,
       "currentStoryId": 44,
       "nextStoryId": 46,
-      "decision": "Thank her"
+      "decision": "Thank her",
+      "locationId": null,
+      "allyId": 2
     },
     {
       "id": 73,
       "currentStoryId": 48,
       "nextStoryId": 34,
-      "decision": "Continue reading"
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 2
     },
     {
       "id": 74,
