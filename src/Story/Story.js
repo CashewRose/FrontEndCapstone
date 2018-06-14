@@ -5,7 +5,7 @@ class Story extends Component {
 
   state ={
     line: "Its time to start your story!",
-    choices: [{decision :"continue reading", nextStoryId: 1}]
+    choices: [{decision :"Continue reading", nextStoryId: 1}]
   }
 
 
@@ -19,7 +19,7 @@ class Story extends Component {
     })
     .then(r => r.json())
     .then(story => {
-      if (story.id === 25 || story.id === 31) {
+      if (story.id === 25 || story.id === 31 || story.id === 48 || story.id === 56 || story.id === 47) {
         this.props.activate()
       }
       this.setState({line: story.line})

@@ -11,72 +11,6 @@
       "allyID": "",
       "userID": "",
       "locationID": ""
-    },
-    {
-      "firstName": "Cashew",
-      "lastName": "Rose",
-      "maxHealth": 18,
-      "attack": 1,
-      "currentHealth": 18,
-      "allyActive": false,
-      "locationID": 2,
-      "id": 2,
-      "allyID": 2
-    },
-    {
-      "firstName": "Jane",
-      "lastName": "Austin",
-      "maxHealth": 14,
-      "attack": 0,
-      "currentHealth": 14,
-      "allyActive": false,
-      "locationID": 3,
-      "id": 3,
-      "allyID": 2
-    },
-    {
-      "firstName": "Dejan",
-      "lastName": "Guy",
-      "maxHealth": 10,
-      "attack": 1,
-      "currentHealth": 10,
-      "allyActive": false,
-      "locationID": 1,
-      "id": 4,
-      "allyID": 1
-    },
-    {
-      "firstName": "Rach",
-      "lastName": "Babcock",
-      "maxHealth": 13,
-      "attack": 1,
-      "currentHealth": 13,
-      "allyActive": false,
-      "locationID": 2,
-      "id": 5,
-      "allyID": 1
-    },
-    {
-      "firstName": "pop",
-      "lastName": "",
-      "maxHealth": 18,
-      "attack": 0,
-      "currentHealth": 18,
-      "allyActive": false,
-      "locationID": 2,
-      "id": 6,
-      "allyID": 1
-    },
-    {
-      "firstName": "Levi",
-      "lastName": "Badass",
-      "maxHealth": 16,
-      "attack": 1,
-      "currentHealth": 16,
-      "allyActive": false,
-      "locationID": 3,
-      "id": 7,
-      "allyID": 1
     }
   ],
   "locations": [
@@ -186,27 +120,27 @@
     },
     {
       "id": 17,
-      "line": "You made it this far so you despite your confusion you begin to talk to them."
+      "line": "You made it this far so you despite your confusion you begin to talk to her."
     },
     {
       "id": 18,
-      "line": "Hi I’m characterName, do you know where we are? And how to get out of here?"
+      "line": " \"Hi I’m characterName, do you know where we are? And how to get out of here?\""
     },
     {
       "id": 19,
-      "line": "She smiles warmly at you. 'I’m Kiki. Its nice to meet you. I can fly us to the nearest town. Its a little scary but we can go on my broom. You’ll just have to make room for JiJi.'"
+      "line": "She smiles warmly at you. \"I’m Kiki. Its nice to meet you. I can fly us to the nearest town. Its a little scary but we can go on my broom. You’ll just have to make room for JiJi.\""
     },
     {
       "id": 20,
-      "line": "She smiles warmly at you. 'I’m Kiki. Its nice to meet you. I can fly us to the nearest town. Its a little scary but we can go on my broom. You’ll just have to make room for JiJi.'"
+      "line": "She smiles warmly at you. \"I’m Kiki. Its nice to meet you. I can fly us to the nearest town. Its a little scary but we can go on my broom. You’ll just have to make room for JiJi.\""
     },
     {
       "id": 21,
-      "line": "She smiles warmly at you. 'My name’s Kiki and this is Jiji.' She points towards the black cat that is at her feet."
+      "line": "She smiles warmly at you. \"My name’s Kiki and this is Jiji.\" She points towards the black cat that is at her feet."
     },
     {
       "id": 22,
-      "line": "The cat meows at you nonchalantly. 'Normally I would just get us out of here but my broom broke as I fell… I had a delivery but some stupid crows started attacking me. But I should be able to get us out on foot.'"
+      "line": "The cat meows at you nonchalantly. \"Normally I would just get us out of here but my broom broke as I fell… I had a delivery but some stupid crows started attacking me. But I should be able to get us out on foot.\""
     },
     {
       "id": 23,
@@ -214,11 +148,11 @@
     },
     {
       "id": 24,
-      "line": "You choose to politely decline her offer and proceed on foot."
+      "line": "You choose to politely decline her offer and proceed on foot by yourself."
     },
     {
       "id": 25,
-      "line": "You shakily climb onto the broom behind her and grip it tightly. She offers you an assured nod and says excitedly, 'Ok! Hold on tight! Here we go!'"
+      "line": "You shakily climb onto the broom behind her and grip it tightly. She offers you an assured nod and says excitedly, \"Ok! Hold on tight! Here we go!\""
     },
     {
       "id": 26,
@@ -230,15 +164,15 @@
     },
     {
       "id": 28,
-      "line": "Kiki begins to talk to you 'You ok back there? Dont worry we are almost there.' You feel your stomach start to flip as she starts lowering the broom to the ground."
+      "line": "Kiki begins to talk to you \"You ok back there? Dont worry we are almost there.\" You feel your stomach start to flip as she starts lowering the broom to the ground."
     },
     {
       "id": 29,
-      "line": "Now that you're back on the ground you feel a lot better. You see yourself right outside the town, it wont be a long walk to reach civilization. You turn to Kiki and thank her for helping you out."
+      "line": "Now that you're back on the ground you feel a lot better. You see yourself right outside of a town, it wont be a long walk to reach civilization. You turn to Kiki and thank her for helping you out."
     },
     {
       "id": 30,
-      "line": "'Oh yea, Pam made me some bread before I left. Lets split it!' She hands you half and begins to eat the other half. You eat together and feel your strength returning."
+      "line": "\"Oh yea, Pam made me some bread before I left. Lets split it!\" She hands you half and begins to eat the other half. You eat together and feel your strength returning."
     },
     {
       "id": 31,
@@ -246,7 +180,7 @@
     },
     {
       "id": 32,
-      "line": "I think it's this way!"
+      "line": "\"I think it's this way!\""
     },
     {
       "id": 33,
@@ -254,15 +188,15 @@
     },
     {
       "id": 34,
-      "line": "We should head in this direction."
+      "line": "\"We should head in this direction.\""
     },
     {
       "id": 35,
-      "line": "I believe we should make a turn here."
+      "line": "\"I believe we should make a turn here.\""
     },
     {
       "id": 36,
-      "line": "I think we are almost there. Just straight through here!"
+      "line": "\"I think we are almost there. Just straight through here!\""
     },
     {
       "id": 37,
@@ -270,11 +204,11 @@
     },
     {
       "id": 38,
-      "line": "We go this way"
+      "line": "\"We go this way\""
     },
     {
       "id": 39,
-      "line": "We just need to make a left through here."
+      "line": "\"We just need to make a left through here.\""
     },
     {
       "id": 40,
@@ -290,7 +224,7 @@
     },
     {
       "id": 43,
-      "line": "The girl stops and turns to you. '...Mononoke'. You look at her for a second and then you understand shes offering you her name. She turns around and keeps walking."
+      "line": "The girl stops and turns to you. \"...Mononoke\". You look at her for a second and then you understand she's offering you her name. She turns around and keeps walking."
     },
     {
       "id": 44,
@@ -298,11 +232,11 @@
     },
     {
       "id": 45,
-      "line": "Your new friend hands you some herbs and berries. “Here, eat these”. You take them from her. As you are eating them you feel better."
+      "line": "Your new friend hands you some herbs and berries. \"Here, eat these\". You take them from her. As you are eating them you feel better."
     },
     {
       "id": 46,
-      "line": "'These are Chiko nuts, they come from my village. They're really good for you but I'm afraid they don't taste so good.' You begin to eat the bitter nuts and after a few minutes feel your energy come back to you."
+      "line": "\"Here, these are Chiko nuts, they come from my village. They're really good for you but I'm afraid they don't taste so good.\" You begin to eat the bitter nuts and after a few minutes feel your energy come back to you."
     },
     {
       "id": 47,
@@ -312,27 +246,67 @@
     },
     {
       "id": 48,
-      "line": "You decide it's probably best to follow someone with a general idea of where they are going. You begin trailing behind her.",
-      "locationId": null,
-      "allyId": 3
+      "line": "You decide it's probably best to follow someone with a general idea of where they are going. You begin trailing behind her."
     },
     {
       "id": 49,
-      "line": "",
-      "locationId": null,
-      "allyId": null
+      "line": "It seems to be girl wearing a coat of fur and some heavy bone like jewelry. She has short cropped brown hair with tribal markings on her face, she seems like a warrior but she also looks almost 2D and cartoony. You can’t seem to put your finger on it…"
     },
     {
       "id": 50,
-      "line": "",
-      "locationId": null,
-      "allyId": null
+      "line": "As you get closer to the girl, you see a few wolves watching you. Perhaps this was not the best idea..."
     },
     {
       "id": 51,
-      "line": "",
-      "locationId": null,
-      "allyId": null
+      "line": "You decide it wasn't worth the risk. You'll try and find your own way out of here."
+    },
+    {
+      "id": 52,
+      "line": "She stares at you and offers you a cautious growl, and then she begins to walk away. The wolves flank her side. She seems like she knows where she is going. While she seems standoffish, she doesn't appear to be dangerous."
+    },
+    {
+      "id": 53,
+      "line": "It seems to be girl wearing a blue dress with a green satchel strapped on her hip. She has short cropped reddish brown hair. She seems strangely off, almost 2D and cartoony. You can’t seem to put your finger on it…"
+    },
+    {
+      "id": 54,
+      "line": "She greets you warmly. \"Hi I'm Nausicaa. I took my glider into the hills and was just having lunch with Teto. He’s my fox-squirrel. I don't mind taking you back on it, just be sure and hold on tight.\""
+    },
+    {
+      "id": 55,
+      "line": "There is a yellow and brown striped animal on her shoulder. It watches you carefully. Nausicaa is leaning against a white colored airplane with something similar to handle bars. That must be a glider."
+    },
+    {
+      "id": 56,
+      "line": "You decide to ride with her climbing onto the glider behind her and grip the bars tightly. She offers you an assured nod and says excitedly, \"Ok! Hold on tight! Here we go!\""
+    },
+    {
+      "id": 57,
+      "line": "Nausicaa begins to say something to you. \"I guess you don't really like being up here, huh? Dont worry we are almost there.\" You feel your stomach start to flip as she starts lowering her glider."
+    },
+    {
+      "id": 58,
+      "line": "Now that you're back on the ground you feel a lot better. You see yourself right outside of a town, it wont be a long walk to reach civilization. You turn to Nausicaa and thank her for her help."
+    },
+    {
+      "id": 59,
+      "line": "She greets you warmly.\"I'm Nausicaa. Me and Teto were out exploring, we were returning an injured ohm to the forest when we damaged our glider. You’re welcome to join us on foot.\""
+    },
+    {
+      "id": 60,
+      "line": "There is a yellow and brown striped animal on her shoulder. That must be Teto. It watches you carefully. Nausicaa is leaning against a white colored airplane with something similar to handle bars. It seems pretty damaged."
+    },
+    {
+      "id": 0,
+      "line": ""
+    },
+    {
+      "id": 0,
+      "line": ""
+    },
+    {
+      "id": 0,
+      "line": ""
     }
   ],
   "storyConnections": [
@@ -405,7 +379,7 @@
       "currentStoryId": 5,
       "nextStoryId": 7,
       "decision": "Continue reading",
-      "locationId": 1,
+      "locationId": null,
       "allyId": null
     },
     {
@@ -638,7 +612,7 @@
       "nextStoryId": 27,
       "decision": "Continue reading",
       "locationId": null,
-      "allyId": 1
+      "allyId": null
     },
     {
       "id": 37,
@@ -938,27 +912,243 @@
     },
     {
       "id": 74,
-      "currentStoryId": 0,
-      "nextStoryId": 0,
-      "decision": ""
+      "currentStoryId": 12,
+      "nextStoryId": 11,
+      "decision": "Don't approach",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 75,
-      "currentStoryId": 0,
-      "nextStoryId": 0,
-      "decision": ""
+      "currentStoryId": 12,
+      "nextStoryId": 49,
+      "decision": "Approach",
+      "locationId": null,
+      "allyId": 3
     },
     {
       "id": 76,
-      "currentStoryId": 0,
-      "nextStoryId": 0,
-      "decision": ""
+      "currentStoryId": 49,
+      "nextStoryId": 50,
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": null
     },
     {
       "id": 77,
-      "currentStoryId": 0,
-      "nextStoryId": 0,
-      "decision": ""
+      "currentStoryId": 50,
+      "nextStoryId": 51,
+      "decision": "Turn around",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 78,
+      "currentStoryId": 50,
+      "nextStoryId": 18,
+      "decision": "Keep going and introduce yourself",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 79,
+      "currentStoryId": 18,
+      "nextStoryId": 52,
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 3
+    },
+    {
+      "id": 80,
+      "currentStoryId": 52,
+      "nextStoryId": 51,
+      "decision": "Don't follow her",
+      "locationId": null,
+      "allyId": 3
+    },
+    {
+      "id": 81,
+      "currentStoryId": 52,
+      "nextStoryId": 48,
+      "decision": "Follow her",
+      "locationId": null,
+      "allyId": 3
+    },
+    {
+      "id": 82,
+      "currentStoryId": 7,
+      "nextStoryId": 11,
+      "decision": "Don't approach",
+      "locationId": null,
+      "allyId": 3
+    },
+    {
+      "id": 83,
+      "currentStoryId": 7,
+      "nextStoryId": 49,
+      "decision": "Approach",
+      "locationId": null,
+      "allyId": 3
+    },
+    {
+      "id": 84,
+      "currentStoryId": 7,
+      "nextStoryId": 11,
+      "decision": "Don't approach",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 85,
+      "currentStoryId": 7,
+      "nextStoryId": 53,
+      "decision": "Approach",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 86,
+      "currentStoryId": 53,
+      "nextStoryId": 17,
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 87,
+      "currentStoryId": 18,
+      "nextStoryId": 54,
+      "decision": "Continue reading",
+      "locationId": 2,
+      "allyId": 2
+    },
+    {
+      "id": 88,
+      "currentStoryId": 54,
+      "nextStoryId": 55,
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 89,
+      "currentStoryId": 55,
+      "nextStoryId": 24,
+      "decision": "Dont get on glider",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 90,
+      "currentStoryId": 55,
+      "nextStoryId": 56,
+      "decision": "Get on the glider",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 91,
+      "currentStoryId": 56,
+      "nextStoryId": 26,
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 92,
+      "currentStoryId": 27,
+      "nextStoryId": 57,
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 93,
+      "currentStoryId": 57,
+      "nextStoryId": 58,
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 94,
+      "currentStoryId": 58,
+      "nextStoryId": 46,
+      "decision": "Thank her",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 95,
+      "currentStoryId": 18,
+      "nextStoryId": 59,
+      "decision": "Continue reading",
+      "locationId": 1,
+      "allyId": 2
+    },
+    {
+      "id": 96,
+      "currentStoryId": 18,
+      "nextStoryId": 59,
+      "decision": "Continue reading",
+      "locationId": 3,
+      "allyId": 2
+    },
+    {
+      "id": 97,
+      "currentStoryId": 59,
+      "nextStoryId": 60,
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 98,
+      "currentStoryId": 60,
+      "nextStoryId": 47,
+      "decision": "Go with her",
+      "locationId": 3,
+      "allyId": 2
+    },
+    {
+      "id": 99,
+      "currentStoryId": 60,
+      "nextStoryId": 31,
+      "decision": "Go with her",
+      "locationId": 1,
+      "allyId": 2
+    },
+    {
+      "id": 100,
+      "currentStoryId": 60,
+      "nextStoryId": 24,
+      "decision": "Don't go with her",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 101,
+      "currentStoryId": 12,
+      "nextStoryId": 11,
+      "decision": "Don't approach",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 102,
+      "currentStoryId": 12,
+      "nextStoryId": 53,
+      "decision": "Approach",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 103,
+      "currentStoryId": 47,
+      "nextStoryId": 34,
+      "decision": "Continue reading",
+      "locationId": null,
+      "allyId": 2
     }
   ],
   "progressiveStory": [
