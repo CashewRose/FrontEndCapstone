@@ -11,6 +11,28 @@
       "allyID": "",
       "userID": "",
       "locationID": ""
+    },
+    {
+      "firstName": "trial",
+      "lastName": "game",
+      "maxHealth": 18,
+      "attack": 0,
+      "currentHealth": 18,
+      "allyActive": false,
+      "locationID": 3,
+      "id": 2,
+      "allyID": 3
+    },
+    {
+      "firstName": "Steve",
+      "lastName": "CodeMaster",
+      "maxHealth": 14,
+      "attack": 1,
+      "currentHealth": 14,
+      "allyActive": false,
+      "locationID": 1,
+      "id": 3,
+      "allyID": 1
     }
   ],
   "locations": [
@@ -104,7 +126,7 @@
     },
     {
       "id": 13,
-      "line": "Unfortunately after some walking you hit a dead end. Its best to go back the other way."
+      "line": "Unfortunately, after some walking you hit a dead end, quite literally! Ouch that hurt... Its best to go back the other way."
     },
     {
       "id": 14,

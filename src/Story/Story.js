@@ -8,6 +8,23 @@ class Story extends Component {
     choices: [{decision :"Continue reading", nextStoryId: 1}]
   }
 
+  InitialDamage = function() {
+    if(this.props.player.maxHealth > 15) {
+      const adjust = this.props.player.currentHealth - Math.floor((Math.random() * 3))
+      this.props.AdjustHealth(adjust)
+    }
+    this.props.AdjustHealth(null)
+  }.bind(this)
+
+  InitialDamageFall = function() {
+    const adjust = this.props.player.currentHealth - Math.floor((Math.random() * 6)+2)
+    this.props.AdjustHealth(adjust)
+  }.bind(this)
+
+  RandomDamage = function() {
+    const adjust = this.props.player.currentHealth - Math.floor((Math.random() * 5)+1)
+    this.props.AdjustHealth(adjust)
+  }.bind(this)
 
   newStory = function(e) {
     const id = e.target.id
@@ -19,9 +36,24 @@ class Story extends Component {
     })
     .then(r => r.json())
     .then(story => {
-      if (story.id === 25 || story.id === 31 || story.id === 48 || story.id === 56 || story.id === 47) {
-        this.props.activate()
-      }
+      switch(story.id){
+        case 3:
+          this.InitialDamage();
+          break;
+        case 2:
+          this.InitialDamageFall();
+          break;
+        case 13:
+          this.RandomDamage();
+          break;
+        case 25:
+        case 31:
+        case 48:
+        case 56:
+        case 47:
+          this.props.activate(); 
+          break;
+        }
       this.setState({line: story.line})
   })
     .then(this.newChoice(id))
@@ -40,6 +72,7 @@ class Story extends Component {
         const specificChoices = [];
         let playerAlly = this.props.player.allyID
         let playerLocation = this.props.player.locationID
+        // const shift = this.props.props
         choices.forEach(function(choice) {
             if ((choice.allyId === playerAlly ) && (choice.locationId === playerLocation)) {
               specificChoices.push(choice)
@@ -56,6 +89,11 @@ class Story extends Component {
         });
         if (specificChoices.length) {
           this.setState({choices: specificChoices})
+        }
+        else if ((specificChoices.length === 0) && (defaultChoices.length === 0)) {
+          this.setState({choices: defaultChoices})
+          const shift = this.props.props
+          setTimeout(function(){ shift.push('/End') }, 3000)
         }
         else {
           this.setState({choices: defaultChoices})
