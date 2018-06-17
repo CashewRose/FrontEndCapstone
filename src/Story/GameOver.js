@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter  } from 'react-router-dom';
+import Stats from './Stats';
 
 class GameOver extends Component {
 
@@ -8,7 +9,8 @@ class GameOver extends Component {
     // A button is made for each ally in the json containing their unique allyId and their name
     return (
       <div className="App">
-        <p>Unfortunately you lost!</p>
+        <p>Unfortunately you lost all of your health and died!</p>
+        {/* <Stats /> */}
       </div>
     );
   }

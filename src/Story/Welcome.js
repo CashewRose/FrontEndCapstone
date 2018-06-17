@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import Story from './Story';
 import './Story.css'
+import Stats from './Stats';
 
 class Welcome extends Component {
 
@@ -37,10 +38,10 @@ class Welcome extends Component {
       setTimeout(function(){ shift.push('/GameOver') }, 6000)
     }
     else {
-    const damage = this.state.player.currentHealth - newAmount
-    this.setState({player: {...this.state.player, currentHealth: newAmount}})
-    this.setState({damage})
-    this.SnackBar()
+      const damage = this.state.player.currentHealth - newAmount
+      this.setState({player: {...this.state.player, currentHealth: newAmount}})
+      this.setState({damage})
+      this.SnackBar()
     }
   }.bind(this)
 
@@ -65,18 +66,8 @@ class Welcome extends Component {
         .then(r => r.json())
         .then(ally => this.setState({ally: ally}))
   }.bind(this)
-
-  AllyHandler = function() {
-    if (this.state.player.allyActive === true) {
-          return (<ul>Here are your partner's current stats:
-          <li>Partner = {this.state.ally.name}</li>
-          <li>Max health = {this.state.ally.maxHealth}</li>
-          <li>Current health = {this.state.ally.currentHealth}</li>
-          <li>Attack = {this.state.ally.attack}</li>
-        </ul>);
-      }
-  }.bind(this)
-
+    
+  // Makes ally active
   AllyActive = function() {
     this.setState({player: {...this.state.player, allyActive: true}})
   }.bind(this)
@@ -84,14 +75,8 @@ class Welcome extends Component {
   render() {
     return (
       <div className="App">
-        <ul>Here are your current stats:
-          <li>Player = {this.state.player.firstName} {this.state.lastName}</li>
-          <li>Max health = {this.state.player.maxHealth}</li>
-          <li>Current health = {this.state.player.currentHealth}</li>
-          <li>Attack = {this.state.player.attack}</li>
-        </ul>
         <div id="snackbar">You have taken {this.state.damage} damage</div>
-        {this.AllyHandler()}
+        < Stats player={this.state.player} ally={this.state.ally}/>
         < Story activate={this.AllyActive} AdjustHealth={this.AdjustHealth} player={this.state.player} props={this.props.history}/>
       </div>
     );

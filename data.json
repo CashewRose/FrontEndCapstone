@@ -11,28 +11,6 @@
       "allyID": "",
       "userID": "",
       "locationID": ""
-    },
-    {
-      "firstName": "trial",
-      "lastName": "game",
-      "maxHealth": 18,
-      "attack": 0,
-      "currentHealth": 18,
-      "allyActive": false,
-      "locationID": 3,
-      "id": 2,
-      "allyID": 3
-    },
-    {
-      "firstName": "Steve",
-      "lastName": "CodeMaster",
-      "maxHealth": 14,
-      "attack": 1,
-      "currentHealth": 14,
-      "allyActive": false,
-      "locationID": 1,
-      "id": 3,
-      "allyID": 1
     }
   ],
   "locations": [
@@ -319,16 +297,32 @@
       "line": "There is a yellow and brown striped animal on her shoulder. That must be Teto. It watches you carefully. Nausicaa is leaning against a white colored airplane with something similar to handle bars. It seems pretty damaged."
     },
     {
-      "id": 0,
-      "line": ""
+      "id": 61,
+      "line": "You run into on a rock cleverly shrouded by foliage."
     },
     {
-      "id": 0,
-      "line": ""
+      "id": 62,
+      "line": "You slide down a ditch and get hit in the face by branch."
     },
     {
-      "id": 0,
-      "line": ""
+      "id": 63,
+      "line": "You got bitten by a snake. Man that hurt..."
+    },
+    {
+      "id": 64,
+      "line": "While walking your ankle gives out and you fall down and gash your leg."
+    },
+    {
+      "id": 65,
+      "line": "You accidentally provoked a hive of sorts. Insects attacked you and you get stung pretty badly."
+    },
+    {
+      "id": 66,
+      "line": "While walking you find yourself sinking in some sort of mudpit. After much exertion you manage to crawl out of it."
+    },
+    {
+      "id": 67,
+      "line": "It was touch and go there for a minute but you finally manage to make out civilization in the distance! Maybe now you can figure out exactly where you are."
     }
   ],
   "storyConnections": [
