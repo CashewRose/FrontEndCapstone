@@ -29,7 +29,7 @@ class Form extends Component {
     .then( newPerson => this.props.history.push({
       pathname: '/Ally',
       //Stores the unique players id so you can referance it in a get fetch later
-      state: {playerId: newPerson.id}  
+      state: {id: newPerson.id}  
   }) )
   }.bind(this)
 

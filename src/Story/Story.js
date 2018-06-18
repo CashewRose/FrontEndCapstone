@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, } from 'react-router-dom'
 
 class Story extends Component {
 
@@ -174,12 +174,12 @@ class Story extends Component {
         if (specificChoices.length) {
           this.setState({choices: specificChoices})
         }
-        // if there are no options, run end of game
-        else if ((specificChoices.length === 0) && (defaultChoices.length === 0)) {
-          this.setState({choices: defaultChoices})
-          const shift = this.props.props
-          setTimeout(function(){ shift.push('/End') }, 3000)
-        }
+        // // if there are no options, run end of game
+        // else if ((specificChoices.length === 0) && (defaultChoices.length === 0)) {
+        //   this.setState({choices: defaultChoices})
+        //   const shift = this.props.props
+        //   setTimeout(function(){ shift.push('/End') }, 3000)
+        // }
         // Runs default array if no specific choices
         else {
           this.setState({choices: defaultChoices})
@@ -187,14 +187,40 @@ class Story extends Component {
     })
   }.bind(this)
 
+  newAlly = function() {
+    this.props.props.push({
+      pathname: '/Ally',
+      //Stores the unique players id so you can referance it in a get fetch in componentdidmount
+      state: {id: this.props.player.id}  
+  })
+  }.bind(this)
+
+  newTry = function() { 
+    this.props.props.push({
+      pathname: '/Welcome',
+      //Stores the unique players id so you can referance it in a get fetch in componentdidmount
+      state: {id: this.props.player.id}  
+  })
+  }.bind(this)
+
   OnceSet = function() {
     if (this.props.player.currentHealth === 0) {
         return (
           <div className="App">
             <p>Unfortunately you lost all of your health and died!</p>
-            <button>Play again?</button>
+            <button onClick={this.newTry}>Try again?</button>
+            <button onClick={this.newAlly}>Pick a different ally?</button>
           </div>
         );
+    }
+    else if (this.state.choices.length === 0) {
+      return (
+        <div className="App">
+          <p>YOU HAVE COMPLETED THE GAME!</p>
+          <button onClick={this.newTry}>Play again?</button>
+          <button onClick={this.newAlly}>Pick a different ally?</button>
+        </div>
+      );
     }
     else{
       return(

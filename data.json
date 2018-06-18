@@ -21,6 +21,39 @@
       "allyActive": false,
       "locationID": 2,
       "id": 2,
+      "allyID": 2
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "maxHealth": 14,
+      "attack": 1,
+      "currentHealth": 14,
+      "allyActive": false,
+      "locationID": 1,
+      "id": 3,
+      "allyID": 2
+    },
+    {
+      "firstName": "po",
+      "lastName": "po",
+      "maxHealth": 18,
+      "attack": 0,
+      "currentHealth": 18,
+      "allyActive": false,
+      "locationID": 3,
+      "id": 4,
+      "allyID": 1
+    },
+    {
+      "firstName": "po",
+      "lastName": "po",
+      "maxHealth": 14,
+      "attack": 0,
+      "currentHealth": 14,
+      "allyActive": false,
+      "locationID": 2,
+      "id": 5,
       "allyID": 3
     }
   ],

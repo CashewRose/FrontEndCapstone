@@ -19,7 +19,9 @@ class App extends Component {
           </header>
           <Route exact path="/Ally" component={Ally} />
           <Route exact path="/" component={Form} />
-          <Route exact path="/Welcome" component={Welcome} />
+          <Route exact path="/Welcome" render={(props) => {
+            return <Welcome {...props} key={Date.now()} />
+          }} />
           <Route exact path="/End" component={End} />
         </div>
       </Router>

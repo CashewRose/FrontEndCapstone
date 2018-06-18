@@ -11,7 +11,7 @@ class Welcome extends Component {
     ally: {}
   }
   componentDidMount() {
-    fetch(`http://localhost:8089/players/${this.props.location.state.playerId}`, {
+    fetch(`http://localhost:8089/players/${this.props.location.state.id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -36,7 +36,6 @@ class Welcome extends Component {
       this.SnackBar()
     }
     else {
-      debugger
       const damage = this.state.player.currentHealth - newAmount
       this.setState({player: {...this.state.player, currentHealth: newAmount}})
       this.setState({damage})
