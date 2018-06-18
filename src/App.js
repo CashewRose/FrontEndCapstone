@@ -5,7 +5,6 @@ import Form from './Player/Form';
 import { BrowserRouter as Router, Route, } from 'react-router-dom'
 import Ally from './Player/Ally'
 import Welcome from './Story/Welcome';
-import End from './Story/End';
 class App extends Component {
 
 
@@ -22,7 +21,6 @@ class App extends Component {
           <Route exact path="/Welcome" render={(props) => {
             return <Welcome {...props} key={Date.now()} />
           }} />
-          <Route exact path="/End" component={End} />
         </div>
       </Router>
     );
