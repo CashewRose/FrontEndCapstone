@@ -187,14 +187,29 @@ class Story extends Component {
     })
   }.bind(this)
 
+  OnceSet = function() {
+    if (this.props.player.currentHealth === 0) {
+        return (
+          <div className="App">
+            <p>Unfortunately you lost all of your health and died!</p>
+            <button>Play again?</button>
+          </div>
+        );
+    }
+    else{
+      return(
+      this.state.choices.map((choice, index) => {
+        return (<button id={choice.nextStoryId} value={choice.correctWayOut} onClick={this.newStory} key={index}>{choice.decision}</button>);
+      }))
+    }
+  }
+
   render() {
     const line = this.state.line.replace("characterName", this.props.player.firstName)
     return (
       <div className="App">
         <p>{line}</p>
-        {this.state.choices.map((choice, index) => {
-          return (<button id={choice.nextStoryId} value={choice.correctWayOut} onClick={this.newStory} key={index}>{choice.decision}</button>);
-        })}
+        {this.OnceSet()}
       </div>
     );
   }

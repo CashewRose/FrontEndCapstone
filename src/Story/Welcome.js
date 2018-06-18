@@ -34,10 +34,9 @@ class Welcome extends Component {
       this.setState({player: {...this.state.player, currentHealth: 0}})
       this.setState({damage})
       this.SnackBar()
-      const shift = this.props.history
-      setTimeout(function(){ shift.push('/GameOver') }, 6000)
     }
     else {
+      debugger
       const damage = this.state.player.currentHealth - newAmount
       this.setState({player: {...this.state.player, currentHealth: newAmount}})
       this.setState({damage})
