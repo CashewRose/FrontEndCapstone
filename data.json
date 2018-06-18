@@ -11,6 +11,17 @@
       "allyID": "",
       "userID": "",
       "locationID": ""
+    },
+    {
+      "firstName": "Cashew",
+      "lastName": "Rose",
+      "maxHealth": 18,
+      "attack": 1,
+      "currentHealth": 18,
+      "allyActive": false,
+      "locationID": 2,
+      "id": 2,
+      "allyID": 3
     }
   ],
   "locations": [
