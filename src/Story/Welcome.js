@@ -9,6 +9,7 @@ class Welcome extends Component {
     player: {},
     ally: {}
   }
+
   componentDidMount() {
     fetch(`http://localhost:8089/players/${this.props.location.state.id}`, {
       method: "GET",
@@ -18,9 +19,14 @@ class Welcome extends Component {
     })
       .then(r => r.json())
       .then(player => this.setState({player: player}))
-      .then(() => this.Allystats())
-      
+      .then(() => this.Allystats())  
   }
+
+  MaxHeal = function() {
+    const max = this.state.player.maxHealth
+    this.setState({player: {...this.state.player, currentHealth: max}})
+    this.SnackBar("snackbarHeal")
+  }.bind(this)
 
   AdjustHealth = function(newAmount) {
     if(newAmount === null){
@@ -55,13 +61,13 @@ class Welcome extends Component {
 
   Allystats = function() {
     fetch(`http://localhost:8089/allies/${this.state.player.allyID}`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json"
-        }
-        })
-        .then(r => r.json())
-        .then(ally => this.setState({ally: ally}))
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+    .then(r => r.json())
+    .then(ally => this.setState({ally: ally}))
   }.bind(this)
     
   // Makes ally active
@@ -76,8 +82,17 @@ class Welcome extends Component {
       <div className="App">
         <div id="snackbar">You have taken {this.state.damage} damage</div>
         <div id="snackbarAlly">You have gained {this.state.ally.name} as an ally!</div>
+        <div id="snackbarHeal">You have returned to maximum health!!</div>
+        <div id="snackbarLevelPlayer"> 
+          <p>{this.state.player.name} has gained + {} max health!</p>
+          <p>{this.state.player.name} has gained + {} to attack!</p>
+        </div>
+        <div id="snackbarLevelAlly"> 
+          <p>{this.state.ally.name} has gained + {} max health!</p>
+          <p>{this.state.ally.name} has gained + {} to attack!</p>
+        </div>
         < Stats player={this.state.player} ally={this.state.ally}/>
-        < Story activate={this.AllyActive} AdjustHealth={this.AdjustHealth} player={this.state.player} props={this.props.history}/>
+        < Story activate={this.AllyActive} AdjustHealth={this.AdjustHealth} heal={this.MaxHeal} player={this.state.player} props={this.props.history}/>
       </div>
     );
   }

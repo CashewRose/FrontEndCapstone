@@ -1,4 +1,8 @@
 /* The snackbar - position it at the bottom and in the middle of the screen */
+
+#snackbarHeal,
+#snackbarLevelAlly,
+#snackbarLevelPlayer,
 #snackbar,
 #snackbarAlly {
     visibility: hidden; /* Hidden by default. Visible on click */
@@ -17,7 +21,10 @@
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show,
-#snackbarAlly.show {
+#snackbarAlly.show,
+#snackbarHeal.show,
+#snackbarLevelAlly.show,
+#snackbarLevelPlayer.show {
     visibility: visible; /* Show the snackbar */
 
 /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 

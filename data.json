@@ -227,7 +227,7 @@
     },
     {
       "id": 30,
-      "line": "\"Oh yea, Pam made me some bread before I left. Lets split it!\" She hands you half and begins to eat the other half. You eat together and feel your strength returning."
+      "line": "\"Oh yea, Pam made me some bread before I left. Lets split it!\""
     },
     {
       "id": 31,
@@ -287,17 +287,15 @@
     },
     {
       "id": 45,
-      "line": "Your new friend hands you some herbs and berries. \"Here, eat these\". You take them from her. As you are eating them you feel better."
+      "line": "Your new friend holds her hand out with some herbs and berries. \"Here, eat these.\""
     },
     {
       "id": 46,
-      "line": "\"Here, these are Chiko nuts, they come from my village. They're really good for you but I'm afraid they don't taste so good.\" You begin to eat the bitter nuts and after a few minutes feel your energy come back to you."
+      "line": "Nausicaa takes something from her pouch and offers it to you. \"Here, these are Chiko nuts, they come from my village. They're really good for you but I'm afraid they don't taste so good.\""
     },
     {
       "id": 47,
-      "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way through the mountains.",
-      "locationId": 3,
-      "allyId": null
+      "line": "You decide it's probably best to follow someone with a general idea of where they are going. You both proceed to make your way through the mountains."
     },
     {
       "id": 48,
@@ -378,6 +376,34 @@
     {
       "id": 67,
       "line": "It was touch and go there for a minute but you finally manage to make out civilization in the distance! Maybe now you can figure out exactly where you are."
+    },
+    {
+      "id": 68,
+      "line": "She hands you half and begins to eat the other half. You eat together and feel your strength returning."
+    },
+    {
+      "id": 69,
+      "line": "You begin to eat the bitter nuts and after a few minutes feel your energy come back to you."
+    },
+    {
+      "id": 70,
+      "line": "You take them from her. As you are eating them you feel better."
+    },
+    {
+      "id": 71,
+      "line": "You shake your head. You dont really feel like eating right now. You're a bit anxious to see what you can find out in town."
+    },
+    {
+      "id": 72,
+      "line": "Making it through this ordeal all by yourself has made you stronger!"
+    },
+    {
+      "id": 73,
+      "line": "Making it through this adventure together has made both of you stronger!"
+    },
+    {
+      "id": 74,
+      "line": "Thank you for playing! We are currently still building and expanding the story. Check back with us soon as we are working on the next chapter of the story!"
     }
   ],
   "storyConnections": [
@@ -1220,6 +1246,110 @@
       "decision": "Continue reading",
       "locationId": null,
       "allyId": 2
+    },
+    {
+      "id": 104,
+      "currentStoryId": 30,
+      "nextStoryId": 68,
+      "decision": "Eat the bread",
+      "locationId": null,
+      "allyId": 1
+    },
+    {
+      "id": 105,
+      "currentStoryId": 46,
+      "nextStoryId": 69,
+      "decision": "Eat the Chiko nuts",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 105,
+      "currentStoryId": 45,
+      "nextStoryId": 70,
+      "decision": "Eat the herbs and berries",
+      "locationId": null,
+      "allyId": 3
+    },
+    {
+      "id": 106,
+      "currentStoryId": 45,
+      "nextStoryId": 71,
+      "decision": "Dont take them",
+      "locationId": null,
+      "allyId": 3
+    },
+    {
+      "id": 107,
+      "currentStoryId": 46,
+      "nextStoryId": 71,
+      "decision": "Don't take them",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 108,
+      "currentStoryId": 30,
+      "nextStoryId": 71,
+      "decision": "Don't take half of the bread",
+      "locationId": null,
+      "allyId": 1
+    },
+    {
+      "id": 109,
+      "currentStoryId": 67,
+      "nextStoryId": 72,
+      "decision": "Level up!",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 110,
+      "currentStoryId": 71,
+      "nextStoryId": 73,
+      "decision": "Level up!",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 111,
+      "currentStoryId": 70,
+      "nextStoryId": 73,
+      "decision": "Level up!",
+      "locationId": null,
+      "allyId": 3
+    },
+    {
+      "id": 112,
+      "currentStoryId": 69,
+      "nextStoryId": 73,
+      "decision": "Level up!",
+      "locationId": null,
+      "allyId": 2
+    },
+    {
+      "id": 113,
+      "currentStoryId": 68,
+      "nextStoryId": 73,
+      "decision": "Level up!",
+      "locationId": null,
+      "allyId": 1
+    },
+    {
+      "id": 114,
+      "currentStoryId": 72,
+      "nextStoryId": 74,
+      "decision": "Continue your adventure",
+      "locationId": null,
+      "allyId": null
+    },
+    {
+      "id": 115,
+      "currentStoryId": 73,
+      "nextStoryId": 74,
+      "decision": "Continue your adventure",
+      "locationId": null,
+      "allyId": null
     }
   ],
   "progressiveStory": [
