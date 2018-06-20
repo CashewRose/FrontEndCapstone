@@ -3,13 +3,15 @@
 (ProjectName) is a build your own adventure game featuring lovable characters from a celebrated japanese movie studio. I wanted to create something where the players would be able to chose their own path through the games story. Be it playing with their favorite companion through the whole game or by themselves at times. A project where I had created a unique story experience each time a player chose to start the game. I wanted to create a unique text based adventure game using basic front end knowledge. Thus (ProjectName) was born.
 
 ## Where I am in the process
-1. All ticket issues are in the project including some stetch goals.
+1. All ticket issues are in, including some stetch goals for the project.
 1. Currently the user can input their player's name and the system generates their random stats and game location.
 1. The player is then directed to another page where they can choose their partner character.
-1. Once selected the player moves to the welcome or story screen.
-1. All this information is sent to the json server.
-1. The player's json information is all collected, saved, and filled out accordingly for mvp.
+1. Once selected the player moves to the game screen.
+1. The player's json information is all collected, saved, and filled out accordingly for MVP.
 1. You can now complete the story with all of the player selections.
+1. There is now damage and a healing that run correctly.
+1. There are screens that end the game based on if you lose all your health or beat the game.
+1. The story for the first version has been completed.
 
 ## Dependancies
 This project is currently using:

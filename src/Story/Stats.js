@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 class Stats extends Component {
 
-// Player ally stats
+  // Player specific ally stats
   AllyHandler = function() {
+    // Stats are only displayed if the player has their ally active 
     if (this.props.player.allyActive === true) {
       return (<ul>Here are your partner's current stats:
           <li>Partner = {this.props.ally.name}</li>
@@ -14,7 +15,10 @@ class Stats extends Component {
       }
     }.bind(this)
 
+  // Display stats
   render() {
+    // Displays the player's stats and runs the ally function which checks if an ally's stats need to be displayed,
+    // if so they are displayed below the player's stats
     return (
       <div className="App">
         <ul>Here are your current stats:
