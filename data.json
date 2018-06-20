@@ -15,9 +15,9 @@
     {
       "firstName": "Cashew",
       "lastName": "Rose",
-      "maxHealth": 18,
+      "maxHealth": 700,
       "attack": 1,
-      "currentHealth": 18,
+      "currentHealth": 700,
       "allyActive": false,
       "locationID": 2,
       "id": 2,
@@ -59,9 +59,9 @@
     {
       "firstName": "Jessica",
       "lastName": "Swift",
-      "maxHealth": 18,
+      "maxHealth": 700,
       "attack": 0,
-      "currentHealth": 18,
+      "currentHealth": 700,
       "allyActive": false,
       "locationID": 2,
       "id": 6,

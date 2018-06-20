@@ -98,7 +98,7 @@ class Story extends Component {
     }
   }.bind(this)
 
-  // Makes a random damage from 2-6 and calls function to adjust player's stats in state above
+  // Makes a random damage from 2-7 and calls function to adjust player's stats in state above
   InitialDamageFall = function() {
     const adjust = this.props.player.currentHealth - Math.floor((Math.random() * 6)+2)
     this.props.AdjustHealth(adjust)
@@ -110,7 +110,29 @@ class Story extends Component {
     this.props.AdjustHealth(adjust)
   }.bind(this)
 
+  LevelUp = function() {
+    if (this.props.player.allyActive === true) {
+      // Random 1-2 point increase on player's attack
+      const Pattack = Math.floor((Math.random() * 2)+1)
+      // Random 3-5 point increase on player's health
+      const Phealth = Math.floor((Math.random() * 3)+3)
 
+      // Random 5-7 point increase on ally's health
+      const Ahealth = Math.floor((Math.random() * 3)+5)
+      // Random 2-3 point increase on ally's attack
+      const Aattack = Math.floor((Math.random() * 2)+2)
+      debugger
+      this.props.PlayerUp(Phealth, Pattack)
+      this.props.AllyUp(Ahealth, Aattack)
+    }
+    else {
+      // Random 2-3 point increase on player's attack
+      const attack = Math.floor((Math.random() * 2)+2)
+      // Random 6-8 point increase on player's health
+      const health = Math.floor((Math.random() * 3)+6)
+      this.props.PlayerUp(health, attack)
+    }
+  }
 
   newStory = function(e) {
 
@@ -167,6 +189,10 @@ class Story extends Component {
         case 69:
         case 70:
           this.props.heal();
+          break;
+        case 72:
+        case 73:
+          this.LevelUp()
           break;
         }
         
@@ -291,8 +317,8 @@ class Story extends Component {
       return (
         <div className="App">
           <h2>Game Over!</h2>
-          <p>Unfortunately you lost all of your health and died!</p>
           <h3>{this.state.line}</h3>
+          <p>Unfortunately you lost all of your health and died!</p>
           <button onClick={this.replay}>Try again?</button>
           <button onClick={this.newAlly}>Pick a different ally?</button>
         </div>

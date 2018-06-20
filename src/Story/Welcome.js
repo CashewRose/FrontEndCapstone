@@ -102,22 +102,52 @@ class Welcome extends Component {
     })
   }.bind(this)
 
+  LevelUpPlayer = function(health, attack) {
+    const newHealth = this.state.player.maxHealth + health
+    const newCurrentHealth = this.state.player.currentHealth + health
+    const newAttack = this.state.player.attack + attack
+    this.setState({player: {...this.state.player, 
+      healthIncrease: health, 
+      attackIncrease: attack, 
+      currentHealth: newCurrentHealth,
+      attack: newAttack,
+      maxHealth: newHealth}})
+    this.SnackBar("snackbarLevelPlayer")
+  }.bind(this)
+
+  LevelUpAlly = function(health, attack) {
+    const newHealth = this.state.ally.maxHealth + health
+    const newCurrentHealth = this.state.ally.currentHealth + health
+    const newAttack = this.state.ally.attack + attack
+    this.setState({ally: {...this.state.ally, 
+      healthIncrease: health, 
+      attackIncrease: attack, 
+      currentHealth: newCurrentHealth,
+      attack: newAttack,
+      maxHealth: newHealth}})
+    this.SnackBar("snackbarLevelAlly")
+  }.bind(this)
+
   render() {
     return (
       <div className="App">
-        <div id="snackbar">You have taken {this.state.damage} damage</div>
-        <div id="snackbarAlly">You have gained {this.state.ally.name} as an ally!</div>
-        <div id="snackbarHeal">You have returned to maximum health!!</div>
-        <div id="snackbarLevelPlayer"> 
-          <p>{this.state.player.name} has gained + {} max health!</p>
-          <p>{this.state.player.name} has gained + {} to attack!</p>
-        </div>
-        <div id="snackbarLevelAlly"> 
-          <p>{this.state.ally.name} has gained + {} max health!</p>
-          <p>{this.state.ally.name} has gained + {} to attack!</p>
-        </div>
         < Stats player={this.state.player} ally={this.state.ally}/>
-        < Story activate={this.AllyActive} AdjustHealth={this.AdjustHealth} heal={this.MaxHeal} player={this.state.player} props={this.props.history}/>
+        < Story activate={this.AllyActive} AllyUp={this.LevelUpAlly} PlayerUp={this.LevelUpPlayer} AdjustHealth={this.AdjustHealth} heal={this.MaxHeal} player={this.state.player} props={this.props.history}/>
+        <div className="Wrap">
+          <div id="snackbar">You have taken {this.state.damage} damage</div>
+          <div id="snackbarAlly">You have gained {this.state.ally.name} as an ally!</div>
+          <div id="snackbarHeal">You have returned to maximum health!!</div>
+          <div id="together">
+            <div id="snackbarLevelPlayer"> 
+              <p>{this.state.player.firstName} has gained + {this.state.player.healthIncrease} max health!</p>
+              <p>{this.state.player.firstName} has gained + {this.state.player.attackIncrease} to attack!</p>
+            </div>
+            <div id="snackbarLevelAlly"> 
+              <p>{this.state.ally.name} has gained + {this.state.ally.healthIncrease} max health!</p>
+              <p>{this.state.ally.name} has gained + {this.state.player.attackIncrease} to attack!</p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
