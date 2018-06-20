@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FunctionList from "./Functions"
 class Story extends Component {
   
   // Initial state for starting the game
@@ -38,9 +37,37 @@ class Story extends Component {
 
   // Checks your progress in the random maze
   DamageMove = function() {
-    
+    // Checks if you have an ally but you went your own way
+    if (this.props.player.allyActive === true ) {
+
+      // Checks if you managed to get out by yourself
+      if (this.state.correctWayOut >= 2) {
+        // Makes new choices that proceed the story,
+        const cont = {decision: "Continue reading",
+        nextStoryId: 37}
+        // Set the new choices for the player
+        this.setState({choices: [cont]})
+      }  
+
+      // Checks which ally you have and sets you back on track accordingly
+      else if (this.props.player.allyID === 1) {
+        const cont = {decision: "Continue reading",
+        nextStoryId: 33}
+        this.setState({choices: [cont]})
+      }
+      else if (this.props.player.allyID === 2) {
+        const cont = {decision: "Continue reading",
+        nextStoryId: 33}
+        this.setState({choices: [cont]})
+      }
+      else if (this.props.player.allyID === 3 ) {
+        const cont = {decision: "Continue reading",
+        nextStoryId: 42}
+        this.setState({choices: [cont]})
+      }   
+    }
     // Checks if you found the right path enough times to make it out sucessfully, 
-    if (this.state.correctWayOut >= 2) {
+    else if (this.state.correctWayOut >= 2) {
 
       // Makes new choices that proceed the story,
       const right = {decision: "Go right",
@@ -53,28 +80,7 @@ class Story extends Component {
       // Set the new choices for the player
       this.setState({choices: [right, straight, left]})
     }
-    // else if (this.props.allyActive === true ) {
-    //   if (this.props.allyID === 1) {
-    //     const cont = {decision: "Continue reading",
-    //     nextStoryId: 33}
-    //     // id 33 for nausicaa or kiki
-    //     this.setState({choices: [cont]})
-    //   }
-    //   else if (this.props.allyID === 2) {
-    //     const cont = {decision: "Continue reading",
-    //     nextStoryId: 33}
-    //     // id 33 for nausicaa or kiki
-    //     this.setState({choices: [cont]})
-    //   }
-    //   else if (this.props.allyID === 3 ) {
-    //     const cont = {decision: "Continue reading",
-    //     nextStoryId: 42}
-    //     this.setState({choices: [cont]})
-    //     // from random damage mononoke goes to 
-    //     // 42
-    //   }
-    // }
-
+    
     // Otherwise random damage and random damage reason function is run,
     else {
       this.Selfcompletion()
@@ -110,6 +116,9 @@ class Story extends Component {
     this.props.AdjustHealth(adjust)
   }.bind(this)
 
+  // Levels up the player's/ally stats for making it sucessfully to this point in the game
+  // More points are awarded to the player if they went through without an ally
+  // If there is an ally, they also gain a level up
   LevelUp = function() {
     if (this.props.player.allyActive === true) {
       // Random 1-2 point increase on player's attack
@@ -121,7 +130,6 @@ class Story extends Component {
       const Ahealth = Math.floor((Math.random() * 3)+5)
       // Random 2-3 point increase on ally's attack
       const Aattack = Math.floor((Math.random() * 2)+2)
-      debugger
       this.props.PlayerUp(Phealth, Pattack)
       this.props.AllyUp(Ahealth, Aattack)
     }
@@ -201,7 +209,7 @@ class Story extends Component {
 
     }).then(() => {
 
-      // Handles the escape route when you are without an ally
+      // Handles the escape route when you are without an ally or not following their instructions
       // Checks the story line and makes cases if they match
       switch(parseInt(id)){
 
@@ -222,9 +230,9 @@ class Story extends Component {
         case 11:
         case 24:
         case 51:
+        case 75:
           this.Selfcompletion();
           break;
-
         // Otherwise runs the choices in the json set for that line 
         default:
           this.newChoice(id)
@@ -332,7 +340,7 @@ class Story extends Component {
     else if (this.state.choices.length === 0) {
       return (
         <div className="App">
-          <h2>Congrats! {this.props.player.firstName} {this.props.player.lastName}</h2>
+          <h2>Congrats {this.props.player.firstName} {this.props.player.lastName}!</h2>
           <h2>You have completed the first part of the game!</h2>
           <h3>{this.state.line}</h3>
           <button onClick={this.replay}>Play again?</button>

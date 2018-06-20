@@ -11,61 +11,6 @@
       "allyID": "",
       "userID": "",
       "locationID": ""
-    },
-    {
-      "firstName": "Cashew",
-      "lastName": "Rose",
-      "maxHealth": 700,
-      "attack": 1,
-      "currentHealth": 700,
-      "allyActive": false,
-      "locationID": 2,
-      "id": 2,
-      "allyID": 2
-    },
-    {
-      "firstName": "Jane",
-      "lastName": "Doe",
-      "maxHealth": 14,
-      "attack": 1,
-      "currentHealth": 14,
-      "allyActive": false,
-      "locationID": 1,
-      "id": 3,
-      "allyID": 2
-    },
-    {
-      "firstName": "po",
-      "lastName": "po",
-      "maxHealth": 18,
-      "attack": 0,
-      "currentHealth": 18,
-      "allyActive": false,
-      "locationID": 3,
-      "id": 4,
-      "allyID": 1
-    },
-    {
-      "firstName": "po",
-      "lastName": "po",
-      "maxHealth": 14,
-      "attack": 0,
-      "currentHealth": 14,
-      "allyActive": false,
-      "locationID": 2,
-      "id": 5,
-      "allyID": 2
-    },
-    {
-      "firstName": "Jessica",
-      "lastName": "Swift",
-      "maxHealth": 700,
-      "attack": 0,
-      "currentHealth": 700,
-      "allyActive": false,
-      "locationID": 2,
-      "id": 6,
-      "allyID": 2
     }
   ],
   "locations": [
@@ -404,6 +349,10 @@
     {
       "id": 74,
       "line": "Thank you for playing! We are currently still building and expanding the story. Check back with us soon as we are working on the next chapter of the story!"
+    },
+    {
+      "id": 75,
+      "line": "Which way will you go?"
     }
   ],
   "storyConnections": [
@@ -786,7 +735,7 @@
     {
       "id": 46,
       "currentStoryId": 32,
-      "nextStoryId": 33,
+      "nextStoryId": 75,
       "decision": "Go a different way",
       "locationId": null,
       "allyId": 1
@@ -810,7 +759,7 @@
     {
       "id": 49,
       "currentStoryId": 34,
-      "nextStoryId": 33,
+      "nextStoryId": 75,
       "decision": "Go a different route",
       "locationId": null,
       "allyId": 2
@@ -842,7 +791,7 @@
     {
       "id": 53,
       "currentStoryId": 35,
-      "nextStoryId": 33,
+      "nextStoryId": 75,
       "decision": "Go a different way",
       "locationId": null,
       "allyId": 1
@@ -858,7 +807,7 @@
     {
       "id": 55,
       "currentStoryId": 36,
-      "nextStoryId": 33,
+      "nextStoryId": 75,
       "decision": "Go a different way",
       "locationId": null,
       "allyId": 1
@@ -874,7 +823,7 @@
     {
       "id": 57,
       "currentStoryId": 38,
-      "nextStoryId": 33,
+      "nextStoryId": 75,
       "decision": "Go a different route",
       "locationId": null,
       "allyId": 2
@@ -882,7 +831,7 @@
     {
       "id": 58,
       "currentStoryId": 39,
-      "nextStoryId": 33,
+      "nextStoryId": 75,
       "decision": "Go a different route",
       "locationId": null,
       "allyId": 2
@@ -914,7 +863,7 @@
     {
       "id": 62,
       "currentStoryId": 40,
-      "nextStoryId": 42,
+      "nextStoryId": 75,
       "decision": "Try going your own way",
       "locationId": null,
       "allyId": 3
@@ -938,7 +887,7 @@
     {
       "id": 65,
       "currentStoryId": 41,
-      "nextStoryId": 42,
+      "nextStoryId": 75,
       "decision": "Try going your own way",
       "locationId": null,
       "allyId": 3
@@ -946,7 +895,7 @@
     {
       "id": 66,
       "currentStoryId": 43,
-      "nextStoryId": 42,
+      "nextStoryId": 75,
       "decision": "Try going your own way",
       "locationId": null,
       "allyId": 3

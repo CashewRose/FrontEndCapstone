@@ -12,6 +12,8 @@
 1. There is now damage and a healing that run correctly.
 1. There are screens that end the game based on if you lose all your health or beat the game.
 1. The story for the first version has been completed.
+1. You can now escape with your ally despite not listening to them.
+1. There is now damage done to the player if you ignore your ally's directions.
 
 ## Dependancies
 This project is currently using:
