@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withHelpersModifiers  } from 'bloomer';
 import Story from './Story';
 import './Story.css'
 import Stats from './Stats';
@@ -133,20 +134,23 @@ class Welcome extends Component {
       <div className="App">
         < Stats player={this.state.player} ally={this.state.ally}/>
         < Story activate={this.AllyActive} AllyUp={this.LevelUpAlly} PlayerUp={this.LevelUpPlayer} AdjustHealth={this.AdjustHealth} heal={this.MaxHeal} player={this.state.player} props={this.props.history}/>
+        <div className="Wrap">
           <div id="snackbar">You have taken {this.state.damage} damage</div>
           <div id="snackbarAlly">You have gained {this.state.ally.name} as an ally!</div>
           <div id="snackbarHeal">You have returned to maximum health!!</div>
-          <div id="snackbarLevelPlayer"> 
-            <p>{this.state.player.firstName} has gained + {this.state.player.healthIncrease} max health!</p>
-            <p>{this.state.player.firstName} has gained + {this.state.player.attackIncrease} to attack!</p>
+          <div id="together">
+            <div id="snackbarLevelPlayer"> 
+              <p>{this.state.player.firstName} has gained + {this.state.player.healthIncrease} max health!</p>
+              <p>{this.state.player.firstName} has gained + {this.state.player.attackIncrease} to attack!</p>
+            </div>
+            <div id="snackbarLevelAlly"> 
+              <p>{this.state.ally.name} has gained + {this.state.ally.healthIncrease} max health!</p>
+              <p>{this.state.ally.name} has gained + {this.state.player.attackIncrease} to attack!</p>
+            </div>
           </div>
-          <div id="snackbarLevelAlly"> 
-            <p>{this.state.ally.name} has gained + {this.state.ally.healthIncrease} max health!</p>
-            <p>{this.state.ally.name} has gained + {this.state.player.attackIncrease} to attack!</p>
-          </div>
-      </div>
-    );
-  }
+        </div>
+       </div>
+     );
+   }
 }
-
-export default Welcome;
+export default withHelpersModifiers(Welcome);

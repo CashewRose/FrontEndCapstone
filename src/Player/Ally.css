@@ -1,0 +1,21 @@
+img {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+div .AllyContainer{
+    column-count: 3;
+    margin: auto
+}
+
+h2{
+    column-span: all
+}
+
+.ally {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}

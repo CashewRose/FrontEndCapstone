@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { withRouter  } from 'react-router-dom';
+import Kiki from '../Kiki.png';
+import Nausicaa from '../Nausicaa.jpg';
+import Mononoke from '../Mononoke.jpg';
+import './Ally.css'
 
 class Ally extends Component {
 
@@ -42,10 +46,30 @@ class Ally extends Component {
     // Map must have a unique key in react, I used the second parameter on the map method to specify a unique counter.
     // A button is made for each ally in the json containing their unique allyId and their name
     return (
-      <div className="App" onClick={this.DefineCharacters}>
+      <div className="AllyContainer">
         <h2>Pick your helper character!</h2>
         {this.state.allies.map((name, index) => {
-          return (<button id={name.id} key={index}>{name.name}</button>);
+            if (name.id === 1) {
+            return (
+            <div className="AllyPick">
+              <img src={Kiki}></img>
+              <button id={name.id} className='ally' key={index} onClick={this.DefineCharacters}>{name.name}</button>
+            </div>);
+            }
+            else if (name.id === 2) {
+            return (
+            <div className="AllyPick">
+              <img src={Nausicaa}></img>
+              <button id={name.id} className='ally' key={index} onClick={this.DefineCharacters}>{name.name}</button>
+            </div>);
+            }
+            else if (name.id === 3) {
+            return (
+            <div className="AllyPick">
+              <img src={Mononoke}></img>
+              <button id={name.id} className='ally' key={index} onClick={this.DefineCharacters}>{name.name}</button>
+            </div>);
+            }
         })}
       </div>
     );

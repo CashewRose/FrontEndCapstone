@@ -1,0 +1,31 @@
+label {
+    padding: 10px;
+    font-weight: bold
+}
+
+form {
+    margin-top: 25%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center
+}
+
+::placeholder{
+    color: #101010;
+    opacity: 1;
+    text-align: center
+}
+input {
+    width: 20%;
+    background-color: #617182;
+    height: 30px;
+    border-radius: 10px 
+}
+
+button {
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: #617182;
+    height: 35px;
+    width: 90px
+}

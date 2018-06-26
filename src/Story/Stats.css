@@ -1,0 +1,18 @@
+#Progress1,
+#Progress2 {
+    margin: 20px 0px;
+    background-color: pink
+}
+
+li {
+    width: 90%
+}
+
+ul {
+    width: 50%;
+    display: inline-block;
+}
+
+.Stats {
+    padding: 30px
+}
