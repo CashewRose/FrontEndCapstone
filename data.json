@@ -22,6 +22,48 @@
       "locationID": 3,
       "id": 2,
       "allyID": 3
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "maxHealth": 14,
+      "attack": 1,
+      "currentHealth": 14,
+      "allyActive": false,
+      "locationID": 1,
+      "id": 3
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "maxHealth": 11,
+      "attack": 0,
+      "currentHealth": 11,
+      "allyActive": false,
+      "locationID": 3,
+      "id": 4
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "maxHealth": 13,
+      "attack": 0,
+      "currentHealth": 13,
+      "allyActive": false,
+      "locationID": 3,
+      "id": 5,
+      "allyID": 3
+    },
+    {
+      "firstName": "Cashew",
+      "lastName": "Rose",
+      "maxHealth": 13,
+      "attack": 1,
+      "currentHealth": 13,
+      "allyActive": false,
+      "locationID": 1,
+      "id": 6,
+      "allyID": 2
     }
   ],
   "locations": [

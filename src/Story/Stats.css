@@ -1,16 +1,19 @@
+
 #Progress1,
 #Progress2 {
     margin: 20px 0px;
-    background-color: pink
+    border-radius: 10px;
+    color: pink
 }
 
 li {
-    width: 90%
+    width: 90%;  
 }
 
 ul {
-    width: 50%;
+    width: 45%;
     display: inline-block;
+    list-style-type: none;
 }
 
 .Stats {

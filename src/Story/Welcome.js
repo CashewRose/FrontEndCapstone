@@ -113,7 +113,12 @@ class Welcome extends Component {
       currentHealth: newCurrentHealth,
       attack: newAttack,
       maxHealth: newHealth}})
-    this.SnackBar("snackbarLevelPlayer")
+    if (this.state.player.allyActive === false){
+      this.SnackBar("snackbarLevelPlayerSolo")
+    }
+    else {
+      this.SnackBar("snackbarLevelPlayer")
+    }
   }.bind(this)
 
   LevelUpAlly = function(health, attack) {
@@ -138,6 +143,10 @@ class Welcome extends Component {
           <div id="snackbar">You have taken {this.state.damage} damage</div>
           <div id="snackbarAlly">You have gained {this.state.ally.name} as an ally!</div>
           <div id="snackbarHeal">You have returned to maximum health!!</div>
+          <div id="snackbarLevelPlayerSolo"> 
+              <p>{this.state.player.firstName} has gained + {this.state.player.healthIncrease} max health!</p>
+              <p>{this.state.player.firstName} has gained + {this.state.player.attackIncrease} to attack!</p>
+            </div>
           <div id="together">
             <div id="snackbarLevelPlayer"> 
               <p>{this.state.player.firstName} has gained + {this.state.player.healthIncrease} max health!</p>

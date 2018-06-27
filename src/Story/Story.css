@@ -2,6 +2,7 @@
 
 #snackbarHeal,
 #snackbar,
+#snackbarLevelPlayerSolo,
 #snackbarAlly {
     visibility: hidden; /* Hidden by default. Visible on click */
     min-width: 250px; /* Set a default minimum width */
@@ -29,12 +30,12 @@
     padding: 16px; /* Padding */
     z-index: 1; /* Add a z-index if needed */
     bottom: 30px; /* 30px from the bottom */
+    width: 35%;
 }
 
 #together{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 10%;
+    bottom: -1px;
 }
 
 #snackbarLevelPlayer {
@@ -49,10 +50,12 @@
     padding: 16px; /* Padding */
     z-index: 1; /* Add a z-index if needed */
     bottom: 30px; /* 30px from the bottom */
+    width: 35%;
 }
 
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show,
+#snackbarLevelPlayerSolo.show,
 #snackbarAlly.show,
 #snackbarHeal.show,
 #snackbarLevelAlly.show,
@@ -84,4 +87,10 @@ However, delay the fade out process for 2.5 seconds */
 @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
+}
+
+button.Choice {
+    width: 200px;
+    margin-left: 0px;
+    margin: 20px 
 }

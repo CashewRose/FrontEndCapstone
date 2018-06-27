@@ -327,8 +327,8 @@ class Story extends Component {
           <h2>Game Over!</h2>
           <h3>{this.state.line}</h3>
           <p>Unfortunately you lost all of your health and died!</p>
-          <button onClick={this.replay}>Try again?</button>
-          <button onClick={this.newAlly}>Pick a different ally?</button>
+          <button className="Choice" onClick={this.replay}>Try again?</button>
+          <button className="Choice" onClick={this.newAlly}>Pick a different ally?</button>
         </div>
       );
     }
@@ -340,11 +340,11 @@ class Story extends Component {
     else if (this.state.choices.length === 0) {
       return (
         <div className="App">
-          <h2>Congrats {this.props.player.firstName} {this.props.player.lastName}!</h2>
+          <h2>congratulations {this.props.player.firstName} {this.props.player.lastName}!</h2>
           <h2>You have completed the first part of the game!</h2>
           <h3>{this.state.line}</h3>
-          <button onClick={this.replay}>Play again?</button>
-          <button onClick={this.newAlly}>Pick a different ally?</button>
+          <button className="Choice" onClick={this.replay}>Play again?</button>
+          <button className="Choice" onClick={this.newAlly}>Pick a different ally?</button>
         </div>
       );
     }
@@ -356,7 +356,7 @@ class Story extends Component {
         <div className="App">
           <p>{this.state.line.replace("characterName", this.props.player.firstName)}</p>
           {this.state.choices.map((choice, index) => {
-            return (<button id={choice.nextStoryId} value={choice.correctWayOut} onClick={this.newStory} key={index}>{choice.decision}</button>);
+            return (<button id={choice.nextStoryId} className="Choice" value={choice.correctWayOut} onClick={this.newStory} key={index}>{choice.decision}</button>);
           })}
       </div>
       )
