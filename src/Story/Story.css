@@ -1,5 +1,5 @@
 /* The snackbar - position it at the bottom and in the middle of the screen */
-
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 #snackbarHeal,
 #snackbar,
 #snackbarLevelPlayerSolo,
@@ -93,4 +93,59 @@ button.Choice {
     width: 200px;
     margin-left: 0px;
     margin: 20px 
+}
+
+
+#typewriter:before{
+    font-size: 2em;
+    margin: 0;
+    font-family: 'Anonymous Pro', monospace; ;
+}
+
+
+#typewriter:after{
+    content: "|";
+    margin-left: 10px;
+    font-family: 'Anonymous Pro', monospace; 
+    animation: blink 500ms linear infinite alternate;
+}
+
+#typewriter{
+    font-family: 'Anonymous Pro', monospace; 
+    font-size: 180%;
+    font-weight: 900;
+}
+
+div.Hide{
+    visibility: hidden;
+}
+
+div.Show{
+    visibility: show;
+    -webkit-animation: fadein 1s;
+    animation: fadein 1s
+}
+@-webkit-keyframes blink{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes blink{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

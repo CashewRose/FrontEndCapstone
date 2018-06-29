@@ -52,21 +52,21 @@ class Ally extends Component {
             if (name.id === 1) {
             return (
             <div className="AllyPick">
-              <img src={Kiki}></img>
+              <img src={Kiki} alt="A girl is flying on a broom in the sky"></img>
               <button id={name.id} className='ally' key={index} onClick={this.DefineCharacters}>{name.name}</button>
             </div>);
             }
             else if (name.id === 2) {
             return (
             <div className="AllyPick">
-              <img src={Nausicaa}></img>
+              <img src={Nausicaa} alt="A girl is sitting on an airplane"></img>
               <button id={name.id} className='ally' key={index} onClick={this.DefineCharacters}>{name.name}</button>
             </div>);
             }
             else if (name.id === 3) {
             return (
             <div className="AllyPick">
-              <img src={Mononoke}></img>
+              <img src={Mononoke} alt="A girl wearing an animal mask and sporting tribal tattoos"></img>
               <button id={name.id} className='ally' key={index} onClick={this.DefineCharacters}>{name.name}</button>
             </div>);
             }

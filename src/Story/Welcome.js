@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { withHelpersModifiers  } from 'bloomer';
 import Story from './Story';
 import './Story.css'
 import Stats from './Stats';
@@ -162,4 +161,4 @@ class Welcome extends Component {
      );
    }
 }
-export default withHelpersModifiers(Welcome);
+export default Welcome;
