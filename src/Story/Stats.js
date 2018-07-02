@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Progress, withHelpersModifiers } from 'bloomer';
 import './Stats.css'
 class Stats extends Component {
 
@@ -9,7 +8,7 @@ class Stats extends Component {
     if (this.props.player.allyActive === true) {
       return (<ul className="partner" >
           <li>{this.props.ally.name}</li>
-          <li><Progress isSize='medium' isColor='primary' id="Progress2" value={this.props.ally.currentHealth} max={this.props.ally.maxHealth} /></li>
+          <li><meter isSize='medium' isColor='primary' id="Progress2" value={this.props.ally.currentHealth} max={this.props.ally.maxHealth} /></li>
           <li>Max health = {this.props.ally.maxHealth}</li>
           <li>Current health = {this.props.ally.currentHealth}</li>
           <li>Attack = {this.props.ally.attack}</li>
@@ -25,7 +24,7 @@ class Stats extends Component {
       <div className="Stats container">
         <ul>
           <li>{this.props.player.firstName} {this.props.player.lastName}</li>
-          <li><Progress id="Progress1" isSize='medium' isColor='primary' value={this.props.player.currentHealth} max={this.props.player.maxHealth} /> </li>
+          <li><meter id="Progress1" value={this.props.player.currentHealth} max={this.props.player.maxHealth} /> </li>
           <li>Max health = {this.props.player.maxHealth}</li>
           <li>Current health = {this.props.player.currentHealth}</li>
           <li>Attack = {this.props.player.attack}</li>
@@ -36,4 +35,4 @@ class Stats extends Component {
   }
 }
 
-export default withHelpersModifiers(Stats);
+export default Stats;

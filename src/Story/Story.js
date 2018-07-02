@@ -349,7 +349,7 @@ class Story extends Component {
   // Runs typing animation on the story line only when the line itself updates
   componentDidUpdate(prevProps, prevState) {
     // Typical usage (don't forget to compare state):
-    if (this.state.line !== prevState.line) {
+    if ((this.state.line !== prevState.line) && this.props.player.currentHealth !== 0) {
       document.getElementById("typewriter").innerHTML = ""
       this.typeWriter();  
     }

@@ -34,7 +34,7 @@
 }
 
 #together{
-    margin-top: 10%;
+    margin-top: auto;
     bottom: -1px;
 }
 
@@ -112,7 +112,7 @@ button.Choice {
 
 #typewriter{
     font-family: 'Anonymous Pro', monospace; 
-    font-size: 180%;
+    font-size: 250%;
     font-weight: 900;
 }
 
