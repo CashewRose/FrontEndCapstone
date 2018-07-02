@@ -165,7 +165,7 @@ class Story extends Component {
     }
 
     // Get new story line based on id
-    fetch(`http://localhost:8089/story/${id}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/story/${id}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -252,7 +252,7 @@ class Story extends Component {
 
   newChoice =function(id) {
     // Get choices for player to next choose from depending on the new line in the story
-    fetch(`http://localhost:8089/storyConnections?currentStoryId=${id}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/storyConnections?currentStoryId=${id}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"

@@ -14,7 +14,7 @@ class Welcome extends Component {
   // Get the player specific information of:
   // firstName, lastName, maxHealth, currentHealth, attack, allyActive, locationID, id, allyID
   componentDidMount() {
-    fetch(`http://localhost:8089/players/${this.props.location.state.id}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/players/${this.props.location.state.id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -83,7 +83,7 @@ class Welcome extends Component {
   // Get the ally specific information of:
   // name, maxHealth, currentHealth, attack, id
   Allystats = function() {
-    fetch(`http://localhost:8089/allies/${this.state.player.allyID}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/allies/${this.state.player.allyID}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

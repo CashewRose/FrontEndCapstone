@@ -17,7 +17,7 @@ class Form extends Component {
     const maxHealth = Math.floor((Math.random() * 10) + 10)
 
   // Sends the information to the json-server  
-  fetch("http://localhost:8089/players", {
+  fetch("https://frontendcapstone.herokuapp.com/players", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"

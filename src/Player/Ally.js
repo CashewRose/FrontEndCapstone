@@ -14,7 +14,7 @@ class Ally extends Component {
 
   DefineCharacters = (e) => {
     // Fetch is then run finding the specific player's id from the playerId that was saved in forms. It is passed into the end of the URL with that paramater to specify where the updated information needs to go.
-    fetch(`http://localhost:8089/players/${this.props.location.state.id}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/players/${this.props.location.state.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
@@ -31,7 +31,7 @@ class Ally extends Component {
 
   componentDidMount() {
     // Pull allies from the json file
-    fetch("http://localhost:8089/allies", {
+    fetch("https://frontendcapstone.herokuapp.com/allies", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
