@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { withRouter  } from 'react-router-dom';
+import Kiki from '../Kiki.png';
+import Nausicaa from '../Nausicaa.jpg';
+import Mononoke from '../Mononoke.jpg';
+import './Ally.css'
 
 class Ally extends Component {
 
@@ -10,7 +14,7 @@ class Ally extends Component {
 
   DefineCharacters = (e) => {
     // Fetch is then run finding the specific player's id from the playerId that was saved in forms. It is passed into the end of the URL with that paramater to specify where the updated information needs to go.
-    fetch(`http://localhost:8089/players/${this.props.location.state.id}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/players/${this.props.location.state.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
@@ -27,7 +31,7 @@ class Ally extends Component {
 
   componentDidMount() {
     // Pull allies from the json file
-    fetch("http://localhost:8089/allies", {
+    fetch("https://frontendcapstone.herokuapp.com/allies", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -42,10 +46,30 @@ class Ally extends Component {
     // Map must have a unique key in react, I used the second parameter on the map method to specify a unique counter.
     // A button is made for each ally in the json containing their unique allyId and their name
     return (
-      <div className="App" onClick={this.DefineCharacters}>
+      <div className="AllyContainer">
         <h2>Pick your helper character!</h2>
         {this.state.allies.map((name, index) => {
-          return (<button id={name.id} key={index}>{name.name}</button>);
+            if (name.id === 1) {
+            return (
+            <div className="AllyPick">
+              <img src={Kiki} alt="A girl is flying on a broom in the sky"></img>
+              <button id={name.id} className='ally' key={index} onClick={this.DefineCharacters}>{name.name}</button>
+            </div>);
+            }
+            else if (name.id === 2) {
+            return (
+            <div className="AllyPick">
+              <img src={Nausicaa} alt="A girl is sitting on an airplane"></img>
+              <button id={name.id} className='ally' key={index} onClick={this.DefineCharacters}>{name.name}</button>
+            </div>);
+            }
+            else if (name.id === 3) {
+            return (
+            <div className="AllyPick">
+              <img src={Mononoke} alt="A girl wearing an animal mask and sporting tribal tattoos"></img>
+              <button id={name.id} className='ally' key={index} onClick={this.DefineCharacters}>{name.name}</button>
+            </div>);
+            }
         })}
       </div>
     );

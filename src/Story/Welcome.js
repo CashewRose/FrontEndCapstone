@@ -14,7 +14,7 @@ class Welcome extends Component {
   // Get the player specific information of:
   // firstName, lastName, maxHealth, currentHealth, attack, allyActive, locationID, id, allyID
   componentDidMount() {
-    fetch(`http://localhost:8089/players/${this.props.location.state.id}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/players/${this.props.location.state.id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -83,7 +83,7 @@ class Welcome extends Component {
   // Get the ally specific information of:
   // name, maxHealth, currentHealth, attack, id
   Allystats = function() {
-    fetch(`http://localhost:8089/allies/${this.state.player.allyID}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/allies/${this.state.player.allyID}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -112,7 +112,12 @@ class Welcome extends Component {
       currentHealth: newCurrentHealth,
       attack: newAttack,
       maxHealth: newHealth}})
-    this.SnackBar("snackbarLevelPlayer")
+    if (this.state.player.allyActive === false){
+      this.SnackBar("snackbarLevelPlayerSolo")
+    }
+    else {
+      this.SnackBar("snackbarLevelPlayer")
+    }
   }.bind(this)
 
   LevelUpAlly = function(health, attack) {
@@ -133,20 +138,27 @@ class Welcome extends Component {
       <div className="App">
         < Stats player={this.state.player} ally={this.state.ally}/>
         < Story activate={this.AllyActive} AllyUp={this.LevelUpAlly} PlayerUp={this.LevelUpPlayer} AdjustHealth={this.AdjustHealth} heal={this.MaxHeal} player={this.state.player} props={this.props.history}/>
+        <div className="Wrap">
           <div id="snackbar">You have taken {this.state.damage} damage</div>
           <div id="snackbarAlly">You have gained {this.state.ally.name} as an ally!</div>
           <div id="snackbarHeal">You have returned to maximum health!!</div>
-          <div id="snackbarLevelPlayer"> 
-            <p>{this.state.player.firstName} has gained + {this.state.player.healthIncrease} max health!</p>
-            <p>{this.state.player.firstName} has gained + {this.state.player.attackIncrease} to attack!</p>
+          <div id="snackbarLevelPlayerSolo"> 
+              <p>{this.state.player.firstName} has gained + {this.state.player.healthIncrease} max health!</p>
+              <p>{this.state.player.firstName} has gained + {this.state.player.attackIncrease} to attack!</p>
+            </div>
+          <div id="together">
+            <div id="snackbarLevelPlayer"> 
+              <p>{this.state.player.firstName} has gained + {this.state.player.healthIncrease} max health!</p>
+              <p>{this.state.player.firstName} has gained + {this.state.player.attackIncrease} to attack!</p>
+            </div>
+            <div id="snackbarLevelAlly"> 
+              <p>{this.state.ally.name} has gained + {this.state.ally.healthIncrease} max health!</p>
+              <p>{this.state.ally.name} has gained + {this.state.player.attackIncrease} to attack!</p>
+            </div>
           </div>
-          <div id="snackbarLevelAlly"> 
-            <p>{this.state.ally.name} has gained + {this.state.ally.healthIncrease} max health!</p>
-            <p>{this.state.ally.name} has gained + {this.state.player.attackIncrease} to attack!</p>
-          </div>
-      </div>
-    );
-  }
+        </div>
+       </div>
+     );
+   }
 }
-
 export default Welcome;

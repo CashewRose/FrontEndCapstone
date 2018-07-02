@@ -5,17 +5,24 @@ class Story extends Component {
   state ={
     line: "Its time to start your story!",
     choices: [{decision :"Continue reading", nextStoryId: 1}],
-    correctWayOut: 0
+    correctWayOut: 0,
+    i: 0
   }
 
   // Runs a function to set the random maze route
-  Selfcompletion = function() {
+  Selfcompletion = function(newLine) {
 
     // Makes a random number between 1-3 and sets that so 1 of the 3 booleans are randomly true
     const randomTrue = Math.floor(Math.random() * 3) + 1;
 
     // Generates a random line between 61-66 which will display why you recieved damage
-    const line = Math.floor(Math.random() * 6 + 61);
+    let line = Math.floor(Math.random() * 6 + 61);
+
+    // Makes sure that you dont get the same damage reasoning 2X 
+    // (Otherwise it wont rerun the typewriter function which wont display buttons for the player to proceed)
+    if(line === newLine) {
+      this.Selfcompletion(newLine)
+    }
 
     // Makes 3 new choices with the randoms from above
     const right = {decision: "Go right",
@@ -36,7 +43,7 @@ class Story extends Component {
 
 
   // Checks your progress in the random maze
-  DamageMove = function() {
+  DamageMove = function(newLine) {
     // Checks if you have an ally but you went your own way
     if (this.props.player.allyActive === true ) {
 
@@ -83,7 +90,7 @@ class Story extends Component {
     
     // Otherwise random damage and random damage reason function is run,
     else {
-      this.Selfcompletion()
+      this.Selfcompletion(newLine)
     }
 
     // Runs random damage 1-6 and calls function to adjust player's stats in state above
@@ -143,6 +150,9 @@ class Story extends Component {
   }
 
   newStory = function(e) {
+    //Hide buttons now that they've been selected
+    const button = document.getElementById("Buttons");
+    button.className = button.className.replace("Show", "Hide")
 
     // Get the id from the button event which is the id to the next line of the story
     const id = e.target.id
@@ -155,7 +165,7 @@ class Story extends Component {
     }
 
     // Get new story line based on id
-    fetch(`http://localhost:8089/story/${id}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/story/${id}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -222,7 +232,7 @@ class Story extends Component {
         case 64:
         case 65:
         case 66:
-          this.DamageMove();
+          this.DamageMove(parseInt(id));
           break;
 
         // Initializes the random damage and damage line function,
@@ -231,7 +241,7 @@ class Story extends Component {
         case 24:
         case 51:
         case 75:
-          this.Selfcompletion();
+          this.Selfcompletion(parseInt(id));
           break;
         // Otherwise runs the choices in the json set for that line 
         default:
@@ -242,7 +252,7 @@ class Story extends Component {
 
   newChoice =function(id) {
     // Get choices for player to next choose from depending on the new line in the story
-    fetch(`http://localhost:8089/storyConnections?currentStoryId=${id}`, {
+    fetch(`https://frontendcapstone.herokuapp.com/storyConnections?currentStoryId=${id}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -297,6 +307,26 @@ class Story extends Component {
     })
   }.bind(this)
 
+  
+  // Creates a typewriter like function so the text gets displayed slowly
+  typeWriter = function() {
+    let txt = this.state.line.replace("characterName", this.props.player.firstName);
+    let speed = 60; /* The speed/duration of the effect in milliseconds */
+  if (document.getElementById("typewriter") !== null) {
+    if(this.state.i < txt.length) {
+      document.getElementById("typewriter").innerHTML += txt.charAt(this.state.i);
+      this.state.i++;
+      setTimeout(this.typeWriter, speed);
+    }
+    else {
+      this.state.i = 0;
+
+      // Buttons only appear after text animation has finished 
+      const button = document.getElementById("Buttons")
+      button.className = "Show"
+    }
+  }
+}.bind(this)
   // Moves the player back to the Ally page to they can change partner characters
   newAlly = function() {
     this.props.props.push({
@@ -316,8 +346,23 @@ class Story extends Component {
     })
   }.bind(this)
 
+  // Runs typing animation on the story line only when the line itself updates
+  componentDidUpdate(prevProps, prevState) {
+    // Typical usage (don't forget to compare state):
+    if ((this.state.line !== prevState.line) && this.props.player.currentHealth !== 0) {
+      document.getElementById("typewriter").innerHTML = ""
+      this.typeWriter();  
+    }
+
+  // Runs typing animation on the story line the first time
+  }
+  componentDidMount() {
+    this.typeWriter();
+  }
+
 
   render() {
+    
     // If the player's health is now zero display the last line that caused them to die
     // Tell the character they've lost the game and why, 
     // They then have the option to try again as is or try again with a different ally
@@ -327,8 +372,8 @@ class Story extends Component {
           <h2>Game Over!</h2>
           <h3>{this.state.line}</h3>
           <p>Unfortunately you lost all of your health and died!</p>
-          <button onClick={this.replay}>Try again?</button>
-          <button onClick={this.newAlly}>Pick a different ally?</button>
+          <button className="Choice" onClick={this.replay}>Try again?</button>
+          <button className="Choice" onClick={this.newAlly}>Pick a different ally?</button>
         </div>
       );
     }
@@ -340,11 +385,11 @@ class Story extends Component {
     else if (this.state.choices.length === 0) {
       return (
         <div className="App">
-          <h2>Congrats {this.props.player.firstName} {this.props.player.lastName}!</h2>
+          <h2>Congratulations {this.props.player.firstName} {this.props.player.lastName}!</h2>
           <h2>You have completed the first part of the game!</h2>
           <h3>{this.state.line}</h3>
-          <button onClick={this.replay}>Play again?</button>
-          <button onClick={this.newAlly}>Pick a different ally?</button>
+          <button className="Choice" onClick={this.replay}>Play again?</button>
+          <button className="Choice" onClick={this.newAlly}>Pick a different ally?</button>
         </div>
       );
     }
@@ -354,10 +399,12 @@ class Story extends Component {
     else{
       return(
         <div className="App">
-          <p>{this.state.line.replace("characterName", this.props.player.firstName)}</p>
+          <p id="typewriter">{}</p>
+          <div id="Buttons" className="Hide">
           {this.state.choices.map((choice, index) => {
-            return (<button id={choice.nextStoryId} value={choice.correctWayOut} onClick={this.newStory} key={index}>{choice.decision}</button>);
+            return (<button id={choice.nextStoryId} className="Choice" value={choice.correctWayOut} onClick={this.newStory} key={index}>{choice.decision}</button>);
           })}
+        </div>
       </div>
       )
     }

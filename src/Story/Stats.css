@@ -1,0 +1,32 @@
+.Stats{
+    font-family: fantasy, 'Times New Roman', Times, serif;
+    color: lightskyblue;
+    font-size: 17px;
+    font-weight: 900
+}
+meter::-webkit-meter-optimum-value{
+    border-radius: 5px;
+    background: linear-gradient(270deg, rgba(181,244,134,1) 11%, rgba(63,181,0,1) 100%);
+    width: 10em
+}
+
+meter::-webkit-meter-bar{
+    border-radius: 5px;
+    background: #A9A9A9;
+    width: 10em;
+    margin-left: -40px 
+}
+
+li {
+    width: 91%;
+}
+
+ul {
+    width: 45%;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.Stats {
+    padding: 30px
+}

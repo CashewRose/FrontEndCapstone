@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { withRouter} from 'react-router-dom'
-
+import { withRouter} from 'react-router-dom';
+import './Form.css'
 
 
 class Form extends Component {
@@ -17,7 +17,7 @@ class Form extends Component {
     const maxHealth = Math.floor((Math.random() * 10) + 10)
 
   // Sends the information to the json-server  
-  fetch("http://localhost:8089/players", {
+  fetch("https://frontendcapstone.herokuapp.com/players", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
@@ -36,15 +36,13 @@ class Form extends Component {
 
   render() {
     return (
-      <div>
-        <h2>What is your character's name?</h2>
+      <div className="Form">
+        <h1>What is your character's name?</h1>
         <form onSubmit={this.DataSend}>
-          <label> Player's First Name:
+          <label> Player's First Name: </label>
           <input type="text" placeholder="First Name" id="firstName"></input>
-          </label>
-          <label> Player's Last Name:
+          <label> Player's Last Name: </label>
           <input type="text" placeholder="Last Name" id="lastName"></input>
-          </label>
           <button type="submit" value="button">Submit</button>
         </form>
       </div>
