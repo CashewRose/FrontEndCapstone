@@ -29,3 +29,51 @@ button {
     height: 35px;
     width: 90px
 }
+
+
+@media only screen and (max-width: 500px) {
+    form {
+        display: block;
+        margin-top: 25% 
+    }
+
+    input {
+        width: 80%;
+        height: 40px;
+        margin: 5%
+    }
+
+    button.Sub{
+        margin: auto;
+        margin-top:10%;
+        height: 40px;
+    }
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+    form {
+        display: block;
+        margin-top: 15% 
+    }
+    label {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold
+    }
+    input {
+        width: 80%;
+        height: 80px;
+        margin: 5%;
+        font-size: 20px;
+    }
+
+    button.Sub{
+        margin: auto;
+        margin-top:7.5%;
+        margin-bottom: 2.5%; 
+        font-size: 20px;
+        width: 150px;
+        height: 60px;
+    }
+}

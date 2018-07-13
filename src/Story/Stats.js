@@ -8,7 +8,7 @@ class Stats extends Component {
     if (this.props.player.allyActive === true) {
       return (<ul className="partner" >
           <li>{this.props.ally.name}</li>
-          <li><meter isSize='medium' isColor='primary' id="Progress2" value={this.props.ally.currentHealth} max={this.props.ally.maxHealth} /></li>
+          <li><meter id="Progress2" value={this.props.ally.currentHealth} max={this.props.ally.maxHealth} /></li>
           <li>Max health = {this.props.ally.maxHealth}</li>
           <li>Current health = {this.props.ally.currentHealth}</li>
           <li>Attack = {this.props.ally.attack}</li>

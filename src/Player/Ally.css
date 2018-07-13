@@ -19,3 +19,35 @@ h2{
     margin: auto;
     margin-top: 10%;
 }
+
+
+@media only screen and (max-width: 800px) {
+    div .AllyContainer {
+        column-count: 1;
+        margin: auto;
+    }
+
+    img.allyImg {
+        width: 300px;
+        height: 375px;
+    }
+
+    button.ally {
+        margin: auto;
+        margin-top:5%;
+        margin-bottom: 5%;
+        width: 50%;
+        height: 70px;
+        font-size: 25px;
+    }
+    .App-logo {
+        animation: App-logo-spin infinite 15s linear;
+
+      }
+
+    @keyframes App-logo-spin {
+        from { left: 100%; }
+        to { left: -40% }
+    }
+  
+}

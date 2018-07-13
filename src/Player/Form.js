@@ -43,7 +43,7 @@ class Form extends Component {
           <input type="text" placeholder="First Name" id="firstName"></input>
           <label> Player's Last Name: </label>
           <input type="text" placeholder="Last Name" id="lastName"></input>
-          <button type="submit" value="button">Submit</button>
+          <button className="Sub" type="submit" value="button">Submit</button>
         </form>
       </div>
     );
