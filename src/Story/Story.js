@@ -12,33 +12,35 @@ class Story extends Component {
   // Runs a function to set the random maze route
   Selfcompletion = function(newLine) {
 
-    // Makes a random number between 1-3 and sets that so 1 of the 3 booleans are randomly true
-    const randomTrue = Math.floor(Math.random() * 3) + 1;
-
     // Generates a random line between 61-66 which will display why you recieved damage
     let line = Math.floor(Math.random() * 6 + 61);
-
+    
     // Makes sure that you dont get the same damage reasoning 2X 
     // (Otherwise it wont rerun the typewriter function which wont display buttons for the player to proceed)
     if(line === newLine) {
       this.Selfcompletion(newLine)
     }
+    
+    else {
+      // Makes a random number between 1-3 and sets that so 1 of the 3 booleans are randomly true
+      const randomTrue = Math.floor(Math.random() * 3) + 1;
 
-    // Makes 3 new choices with the randoms from above
-    const right = {decision: "Go right",
-    correctWayOut: (randomTrue === 1),
-    nextStoryId: line}
+      // Makes 3 new choices with the randoms from above
+      const right = {decision: "Go right",
+      correctWayOut: (randomTrue === 1),
+      nextStoryId: line}
 
-    const straight = {decision: "Keep straight",
-    correctWayOut: (randomTrue === 2),
-    nextStoryId: line}
+      const straight = {decision: "Keep straight",
+      correctWayOut: (randomTrue === 2),
+      nextStoryId: line}
 
-    const left = {decision: "Go left",
-    correctWayOut: (randomTrue === 3),
-    nextStoryId: line}
+      const left = {decision: "Go left",
+      correctWayOut: (randomTrue === 3),
+      nextStoryId: line}
 
-    // Sets the new choices for the player
-    this.setState({choices: [right, straight, left]})
+      // Sets the new choices for the player
+      this.setState({choices: [right, straight, left]})
+    }
   }.bind(this)
 
 
@@ -156,7 +158,7 @@ class Story extends Component {
 
     // Get the id from the button event which is the id to the next line of the story
     const id = e.target.id
-
+    console.log(id)
     // If there is a boolean value of true, increase the correctWayOut state by one
     // This is used for the maze if you are alone
     const bool = e.target.value
@@ -311,7 +313,7 @@ class Story extends Component {
   // Creates a typewriter like function so the text gets displayed slowly
   typeWriter = function() {
     let txt = this.state.line.replace("characterName", this.props.player.firstName);
-    let speed = 60; /* The speed/duration of the effect in milliseconds */
+    let speed = 50; /* The speed/duration of the effect in milliseconds */
   if (document.getElementById("typewriter") !== null) {
     if(this.state.i < txt.length) {
       document.getElementById("typewriter").innerHTML += txt.charAt(this.state.i);
