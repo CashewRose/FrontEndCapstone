@@ -5,12 +5,31 @@ import './Form.css'
 
 class Form extends Component {
 
+
+  Validate = function(e){
+    e.preventDefault()
+    // Gets information submitted in the input field and stores it
+    const firstName = document.getElementById("firstName")
+    const lastName = document.getElementById("lastName")
+
+    if (firstName.value.length < 1 || lastName.value.length < 1 ) {
+      firstName.placeholder = "First name is required!"
+      lastName.placeholder = "Last name is required!"
+    }
+
+    else {
+      this.DataSend(e)
+    }
+  }.bind(this)
+
   //Function runs when player presses submit
   DataSend = function (e) {
     e.preventDefault()
+
     // Gets information submitted in the input field and stores it
     const firstName = document.getElementById("firstName").value
     const lastName = document.getElementById("lastName").value
+
     // Makes random stats for the players health, attack, and location
     const attack = Math.floor((Math.random() * 2))
     const location = Math.floor((Math.random() * 3) + 1)
@@ -38,7 +57,7 @@ class Form extends Component {
     return (
       <div className="Form">
         <h1>What is your character's name?</h1>
-        <form onSubmit={this.DataSend}>
+        <form onSubmit={this.Validate}>
           <label> Player's First Name: </label>
           <input type="text" placeholder="First Name" id="firstName"></input>
           <label> Player's Last Name: </label>
