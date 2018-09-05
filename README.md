@@ -1,6 +1,6 @@
-# What is (ProjectName)?
+# What is Ghibli Chronicles?
 
-(ProjectName) is a build your own adventure game featuring lovable characters from a celebrated japanese movie studio. I wanted to create something where the players would be able to chose their own path through the games story. Be it playing with their favorite companion through the whole game or by themselves at times. A project where I had created a unique story experience each time a player chose to start the game. I wanted to create a unique text based adventure game using basic front end knowledge. Thus (ProjectName) was born.
+Ghibli Chronicles is a build your own adventure game featuring lovable characters from a celebrated japanese movie studio. I wanted to create something where the players would be able to chose their own path through the games story. Be it playing with their favorite companion through the whole game or by themselves at times. A project where I had created a unique story experience each time a player chose to start the game. I wanted to create a unique text based adventure game using basic front end knowledge. Thus, Ghibli Chronicles was born.
 
 ## Where I am in the process
 1. All ticket issues are in, including some stetch goals for the project.
