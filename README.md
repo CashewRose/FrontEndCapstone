@@ -15,6 +15,13 @@ Ghibli Chronicles is a build your own adventure game featuring lovable character
 1. You can now escape with your ally despite not listening to them.
 1. There is now damage done to the player if you ignore your ally's directions.
 
+## Deployed: ##
+
+Currently the website is live and can be visited at:
+```
+http://personalcashewsite.s3-website-us-east-1.amazonaws.com/
+```
+
 ## Dependancies
 This project is currently using:
 1. React
